@@ -1,32 +1,27 @@
 import React from 'react'
 import { Button, Card, Flex, Typography } from 'antd';
-const cardStyle = {
-  width: 620,
-};
+import Buttons from '../../buttons/Buttons';
 const imgStyle = {
   display: 'block',
-  width: 273,
+  width: 400,
 };
 function Discover() {
   return (
-    <div className='relative top-[450px] flex justify-center item-center mb-[150px]'>
-
+    <div className='w-full relative top-[450px] flex justify-center item-center mb-[150px]'>
        <Card hoverable className=' w-[80%] h-[450px] !overflow-hidden !p-0'>
     <Flex justify="space-between">
     <Flex
         vertical
-        align="flex-end"
-        justify="space-between"
         style={{
-          padding: 32,
+          padding: 10,
         }}
+        className=' justify-center '
       >
-        <Typography.Title level={3}>
-          “antd is an enterprise-class UI design language and React UI library.”
-        </Typography.Title>
-        <Button type="primary" href="https://ant.design" target="_blank">
-          Get Started
-        </Button>
+        <h1 className='w-[500px] font-bold text-[45px]'>
+        Discover Our Amazing Product Range
+        </h1>
+        <p className='w-[500px] pt-5 tracking-wider pb-10'>Explore our wide selection of high-quality refrigerators, air conditioners, washing machines, and more.</p>
+        <Buttons />
       </Flex>
       <img
         alt="avatar"

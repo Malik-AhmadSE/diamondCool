@@ -9,7 +9,7 @@ import {
     FloatButton,
 } from 'antd';
 import { Button } from 'antd';
-import {WhatsAppOutlined} from "@ant-design/icons"
+
 function ContactInfo() {
     const [btn, setbtn] = React.useState("primary");
     return (
@@ -106,7 +106,6 @@ function ContactInfo() {
                         <Checkbox/>I agree the Terms
                     </div>
                     <Button type={btn} onMouseEnter={() => setbtn('primary')} className='bg-transparent mt-8 pt-4 pb-4 pl-5 pr-5 font-semibold text-green-700 border hover:!bg-black hover:border hover:border-black border-green-700 hover:text-white'>Submit</Button>
-                        <FloatButton className='bg-green-600 w-14 h-14' icon={<WhatsAppOutlined  className='text-black font-bold hover:text-white text-[20px]' />}/>
                 </Form>
             </div>
         </>
