@@ -1,21 +1,10 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
 import CloseOutlined from '@ant-design/icons'
-// const [open, setOpen] = React.useState(false); 
 
-//   const showModal = () => {
-//     setOpen(true);
-//   };
-
-//   const handleCancel = () => {
-//     setOpen(false);
-//   };
-
-//   <AirComponent open={open} handleCancel={handleCancel} />
 const AboutUsModal = ({ open, handleCancel }) => {
     return (
         <>
-
             <Modal
                 title=""
                 open={open}

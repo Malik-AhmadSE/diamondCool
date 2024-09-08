@@ -22,7 +22,7 @@ function Contact() {
       </div>
       <div className=' relative top-[500px]'>
         <Location />
-        {/* <a href="https://wa.me/+1234567890">Click here to chat on WhatsApp</a> */}
+        {/*  */}
       </div>
       <div className='relative top-[600px]'>
         <Faq />

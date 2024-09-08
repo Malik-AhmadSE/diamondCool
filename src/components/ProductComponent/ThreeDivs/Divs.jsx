@@ -1,12 +1,15 @@
 import React from 'react';
 import { Button, Card, Flex, Typography } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
+import Air1 from '../../../assets/images/airproducts/air20.png';
+import Air2 from '../../../assets/images/airproducts/air18.png';
+import Air3 from '../../../assets/images/airproducts/air9.png';
 const imgStyle = {
   display: 'block',
   width: 273,
 };
 const Divs = () => (
-  <div className='flex  justify-center gap-10 items-center p-10'>
+  <div className='flex  !justify-center gap-10 !items-center p-10'>
     <Card
     hoverable
     styles={{
@@ -34,8 +37,8 @@ const Divs = () => (
       </Flex>
       <img
         alt="avatar"
-        src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-        className='w-[406px] ml-15 rounded-e-md'
+        src={Air1}
+        className='w-[320px] ml-15 rounded-e-md'
       />
     </Flex>
   </Card>
@@ -54,7 +57,7 @@ const Divs = () => (
     <Flex
         vertical
         style={{
-          padding: 5,
+          padding: 2,
         }}
           className='!pl-2'
       >
@@ -66,11 +69,11 @@ const Divs = () => (
       </div>
       </Flex>
     {/* Image after content */}
-    <div style={{ marginTop: '5px' }}>
+    <div style={{ marginTop: '4px' }}>
       <img 
-        alt="example" 
-       src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-        style={{ width: '100%' }}
+        alt="Image001" 
+        src={Air3}
+        style={{ width: '100%',height:'240px' }}
       />
     </div>
   </Card>
@@ -100,11 +103,11 @@ const Divs = () => (
       </div>
       </Flex>
     {/* Image after content */}
-    <div style={{ marginTop: '5px' }}>
+    <div style={{ marginTop: '4px' }}>
       <img 
         alt="example" 
-       src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-        style={{ width: '100%' }}
+       src={Air2}
+        style={{ width: '100%',height:'240px' }}
       />
     </div>
   </Card>

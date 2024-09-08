@@ -4,21 +4,21 @@ import Facebook from '../../assets/images/icons/facebook.png';
 import Insta from '../../assets/images/icons/insta.png';
 import Linkdin from '../../assets/images/icons/linkdin.png';
 import Tweeter from '../../assets/images/icons/tweeter.png';
-
+import Logo from '../../assets/images/logo.png';
 function Footer() {
     return (
         <div className='w-full flex flex-col relative top-[1100px]'>
             <div className='w-full flex flex-row gap-10'>
                 <div className='w-[75%] pl-10'>
-                    <h1>Logo</h1>
+                <Image src={Logo} className='!w-[150px]' preview={false} onClick={()=>{navigate('/')}} />
                     <address className=' pt-10'>
                         <h6 className='font-medium'>Address:</h6>
-                        <p>Level 1, 12 Sample St, Sydney NSW 2000</p>
+                        <p>P.O.Box # 379672, shop # 18, Fish Round About, Deira Dubai-U.A.E</p>
                     </address>
                     <address className=' pt-10'>
                         <h6 className='font-medium'>Contact:</h6>
-                        <p>1800 123 4567</p>
-                        <p>info@relume.io</p>
+                        <p>+97145773638</p>
+                        <p>diamondcooluae@gmail.com</p>
                     </address>
                     <div className='flex flex-row gap-3 items-center pt-10 tracking-widest'>
                         <Image width={30} src={Facebook} />

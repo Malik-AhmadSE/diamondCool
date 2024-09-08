@@ -1,49 +1,54 @@
-import React from 'react';
-import { Card, Modal, Button } from 'antd';
+// AirComponent.js
+import React, { useState, useEffect } from 'react';
+import { Card, Modal } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
+import { ImageImporter } from './ImageImporter/ImageImporter.jsx'; // Import the ImageImporter component
 
 const { Meta } = Card;
 
-const cardData = Array.from({ length: 10 }, (_, index) => ({
-  id: index + 1,
-  title: `Product ${index + 1}`,
-  description: "www.instagram.com",
-  imgSrc: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-}));
+const AirComponent = ({ open, handleCancel }) => {
+  const [imageData, setImageData] = useState([]);
 
-const RefComponent = ({ open, handleCancel }) => (
-  <Modal
-    title="Refregrator Spare Parts"
-    open={open}
-    onCancel={handleCancel}
-    footer={null} 
-    closeIcon={<CloseOutlined />}
-    className='!w-full !h-full' 
-  >
-    <div
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-        gap: '40px',
-        padding: '20px',
-      }}
+  useEffect(() => {
+    // Fetch combined image and product details data
+    const data = ImageImporter();
+    setImageData(data);
+  }, []);
+
+  return (
+    <Modal
+      title="Refregrator Spare Parts"
+      open={open}
+      onCancel={handleCancel}
+      footer={null}
+      closeIcon={<CloseOutlined />}
+      className='!w-full !h-full'
     >
-      {cardData.map((card) => (
-        <Card
-          key={card.id}
-          hoverable
-          style={{
-            width: 240,
-            marginBottom: '16px', // Add margin to avoid overlapping in smaller screens
-          }}
-          cover={<img alt={card.title} src={card.imgSrc} />}
-        >
-          <Meta title={card.title} description={card.description} />
-        </Card>
-      ))}
-    </div>
-  </Modal>
-);
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          gap: '40px',
+          padding: '20px',
+        }}
+      >
+        {imageData.map((card, index) => (
+          <Card
+            key={index}
+            hoverable
+            style={{
+              width: 240,
+              marginBottom: '16px',
+            }}
+            cover={<img alt={card.title} src={card.src} style={{ width: '100%' }} />}
+          >
+            <Meta title={card.title} description={card.description} />
+          </Card>
+        ))}
+      </div>
+    </Modal>
+  );
+};
 
-export default RefComponent;
+export default AirComponent;
