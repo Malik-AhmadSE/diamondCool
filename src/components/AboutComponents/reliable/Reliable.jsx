@@ -1,6 +1,6 @@
 import { Image } from 'antd';
 import React from 'react'
-import ExpertisePic from '../../../assets/images/Expertise.jpg'
+import ExpertisePic from '../../../assets/images/airproducts/air11.png'
 import Buttons from '../../buttons/Buttons';
 function Reliable() {
     

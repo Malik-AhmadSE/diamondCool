@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
-import CloseOutlined from '@ant-design/icons'
+import {CloseOutlined} from '@ant-design/icons'
 
 const AboutUsModal = ({ open, handleCancel }) => {
     return (
@@ -14,7 +14,7 @@ const AboutUsModal = ({ open, handleCancel }) => {
                 className='!w-3/4 !h-full'
             >
         <div>
-          <h2 className='font-semibold text-[25px] pb-5'>About Diamond Cool</h2>
+          <h2 className='font-semibold text-[25px] pb-5 mt-10'>About Diamond Cool</h2>
           <p className='pb-8'>
             Welcome to <strong>Diamond Cool</strong>, your trusted source for high-quality spare parts for 
             <strong> refrigerators</strong>, <strong>air conditioners</strong>, and <strong>washing machines</strong>. 

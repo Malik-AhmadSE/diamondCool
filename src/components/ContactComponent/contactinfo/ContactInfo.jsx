@@ -1,4 +1,4 @@
-import { Button, Image } from 'antd';
+import { Image } from 'antd';
 import React from 'react'
 import ExpertisePic from '../../../assets/images/Expertise.jpg'
 import Email from '../../../assets/images/icons/email.png';
@@ -6,7 +6,6 @@ import Call from '../../../assets/images/icons/call.png';
 import Locate from '../../../assets/images/icons/locate.png';
 
 function ContactInfo() {
-    
     return (
         <>
         <div className='w-full relative top-36 pl-10'>

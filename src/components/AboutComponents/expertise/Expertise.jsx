@@ -1,7 +1,6 @@
 import { Image } from 'antd';
 import React from 'react'
-import ExpertisePic from '../../../assets/images/Expertise.jpg'
-import Buttons from '../../buttons/Buttons';
+import ExpertisePic from '../../../assets/images/airproducts/air16.png'
 function Expertise() {
     return (
         <div className='w-full relative top-[550px] z-1 flex gap-3 items-center flex-wrap'>
