@@ -1,20 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Modal, Skeleton } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
-import { ImageImporter } from './ImageImporter/ImageImporter.jsx'; // Import the ImageImporter component
+import { ImageImporter } from './ImageImporter/ImageImporter.jsx'; // Make sure this is working and returning correct data
 const { Meta } = Card;
 
 const AirComponent = ({ open, handleCancel }) => {
   const [imageData, setImageData] = useState([]);
-  const [loading, setLoading] = useState(true); // Add loading state
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
-    // Simulate an API call or image loading
-    setTimeout(() => {
+    try {
       const data = ImageImporter();
+      console.log('Fetched data:', data); 
       setImageData(data);
-      setLoading(false); // Set loading to false after data is fetched
-    }, 2000); // Simulate a delay for loading
+      setLoading(false); 
+    } catch (error) {
+      console.error('Error loading images or data:', error); 
+    }
   }, []);
 
   return (
@@ -36,6 +38,7 @@ const AirComponent = ({ open, handleCancel }) => {
         }}
       >
         {loading ? (
+          // Show skeletons while loading
           Array.from({ length: 10 }).map((_, index) => (
             <Card
               key={index}
@@ -50,6 +53,7 @@ const AirComponent = ({ open, handleCancel }) => {
             </Card>
           ))
         ) : (
+          // Show actual content after loading
           imageData.map((card, index) => (
             <Card
               key={index}
