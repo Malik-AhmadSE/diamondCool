@@ -1,10 +1,19 @@
 import { Button, Image } from 'antd';
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import ExpertisePic from '../../../assets/images/Expertise.jpg'
 import Buttons from '../../buttons/Buttons';
+import ExpertiseLoader from '../../Common/skeleton/Expertise';
 function Expertise() {
-    
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 10000);
+    }, []);
     return (
+        <>
+        {loading ? (<ExpertiseLoader />):(
         <div className='w-full relative top-64 z-1 flex gap-3 flex-wrap'>
             <div className='pl-10'>
                 <h6 className='font-semibold mb-2'>Expertise</h6>
@@ -35,7 +44,8 @@ function Expertise() {
             <div className='w-[50%] pl-10 flex justify-center'>
                 <Image src={ExpertisePic} preview={false} className='w-auto' />
             </div>
-        </div>
+        </div>)}
+        </>
     )
 }
 

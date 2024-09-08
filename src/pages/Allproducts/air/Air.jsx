@@ -1,22 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Modal, Skeleton } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
-import { ImageImporter } from './ImageImporter/ImageImporter.jsx'; // Make sure this is working and returning correct data
+import { ImageImporter } from './ImageImporter/ImageImporter.jsx'; // Ensure ImageImporter works correctly
 const { Meta } = Card;
 
 const AirComponent = ({ open, handleCancel }) => {
   const [imageData, setImageData] = useState([]);
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    try {
-      const data = ImageImporter();
-      console.log('Fetched data:', data); 
-      setImageData(data);
-      setLoading(false); 
-    } catch (error) {
-      console.error('Error loading images or data:', error); 
-    }
+    // Simulate an async data fetch with a delay to mimic loading behavior
+    const fetchData = async () => {
+      setLoading(true); // Start loading
+
+      // Simulate a delay (e.g., 1.5 seconds) using setTimeout
+      setTimeout(() => {
+        try {
+          const data = ImageImporter(); // Assume this is a synchronous function
+          console.log('Fetched data:', data);
+          setImageData(data);
+          setLoading(false); // Stop loading after data is fetched
+        } catch (error) {
+          console.error('Error loading images or data:', error);
+          setLoading(false); // Stop loading even if there's an error
+        }
+      }, 10000); 
+    };
+
+    fetchData();
   }, []);
 
   return (
@@ -38,7 +49,6 @@ const AirComponent = ({ open, handleCancel }) => {
         }}
       >
         {loading ? (
-          // Show skeletons while loading
           Array.from({ length: 10 }).map((_, index) => (
             <Card
               key={index}
@@ -48,12 +58,12 @@ const AirComponent = ({ open, handleCancel }) => {
                 marginBottom: '16px',
               }}
             >
-              <Skeleton.Image style={{ width: '100%', height: '150px' }} />
+              <Skeleton.Image className='!w-[100%] pb-5' />
+              <Skeleton active title={true} className='pb-2'/>
               <Skeleton active paragraph={{ rows: 2 }} />
             </Card>
           ))
         ) : (
-          // Show actual content after loading
           imageData.map((card, index) => (
             <Card
               key={index}

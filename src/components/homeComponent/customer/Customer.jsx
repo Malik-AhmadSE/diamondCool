@@ -1,11 +1,22 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import { Card, Rate } from 'antd';
 import { Avatar } from 'antd';
 import Sarah from '../../../assets/images/sarah.jpeg';
 import David from '../../../assets/images/david.jpeg';
 import Maria from '../../../assets/images/maria.jpeg';
+import CustomerLoader from '../../Common/skeleton/Customer.jsx';
 function Customer() {
+  
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+      setTimeout(() => {
+          setLoading(false);
+      }, 10000);
+  }, []);
   return (
+    <>
+    {
+        loading ? (<CustomerLoader/>):(
     <div className='relative top-[850px] pl-10'>
       <h1 className='w-[550px] font-bold text-[45px]'>Customer Testimonials</h1>
       <p>Hear What Our Satisfied Customers Have to Say</p>
@@ -54,6 +65,8 @@ function Customer() {
         </Card>
       </div>
     </div>
+     )}
+        </>
   )
 }
 

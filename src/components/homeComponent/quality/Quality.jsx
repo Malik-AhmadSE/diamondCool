@@ -1,9 +1,19 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import Last from '../../../assets/images/8.png';
 import Buttons from '../../buttons/Buttons';
 import { Image } from 'antd';
+import QualityLoader from '../../Common/skeleton/Quality.jsx';
 function Quality() {
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 10000);
+    }, []);
   return (
+    <>
+    {
+      loading ? (<QualityLoader/>):(
          <div className='w-full relative top-[950px] z-1 flex gap-3 flex-wrap'>
              <div className='w-[50%] pl-10 flex justify-center'>
                 <Image src={Last} preview={false} className='w-auto' />
@@ -19,7 +29,8 @@ function Quality() {
                 </div>
             </div>
            
-        </div>
+        </div>)}
+        </>
   )
 }
 

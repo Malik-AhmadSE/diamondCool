@@ -1,13 +1,23 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import Buttons from '../../buttons/Buttons'
 import { Image } from 'antd'
 import Experts from '../../../assets/images/icons/experts.png';
 import Clock from '../../../assets/images/icons/clock.png';
 import Tailored from '../../../assets/images/icons/tailored.png';
 import Top from '../../../assets/images/icons/top.png';
+import ServiceLoader from '../../Common/skeleton/Service.jsx';
 function Services() {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 10000);
+    }, []);
   return (
-    <div className='relative top-[600px] w-full flex gap-3 pb-10'>
+    <>
+    {loading ? (<ServiceLoader />):
+    (<div className='relative top-[600px] w-full flex gap-3 pb-10'>
        <div className='w-[41%] pl-10'>
        <h6 className='font-semibold mb-2'>Reliable</h6>
         <h1 className='font-bold text-[45px]'>Why Choose Our Services?</h1>
@@ -40,6 +50,8 @@ function Services() {
        </div>
 
     </div>
+)}
+    </>
   )
 }
 
