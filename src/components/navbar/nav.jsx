@@ -27,7 +27,7 @@ const App = () => {
 
       <Flex vertical={value === 'vertical'} className='fixed w-full top-0 left-0 z-40 bg-white '>
         <div style={{ ...baseStyle }} className=' flex items-center pl-10' >
-          <Image src={Logo} className='!w-[150px]' preview={false} onClick={()=>{navigate('/')}} />
+          <Image src={Logo} className='!w-[200px]' preview={false} onClick={()=>{navigate('/')}} />
         </div>
         <div style={{ ...baseStyle }}>
           <Flex vertical={value === 'vertical'} className='h-full flex items-center justify-between pl-20 pr-10' >

@@ -22,7 +22,6 @@ function Contact() {
       </div>
       <div className=' relative top-[500px]'>
         <Location />
-        {/*  */}
       </div>
       <div className='relative top-[600px]'>
         <Faq />
