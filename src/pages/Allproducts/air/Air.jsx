@@ -1,10 +1,10 @@
 // AirComponent.js
 import React, { useState, useEffect } from 'react';
-import { Card, Modal } from 'antd';
+import { Card, Modal,Button } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
 import { ImageImporter } from './ImageImporter/ImageImporter.jsx'; // Import the ImageImporter component
-
 const { Meta } = Card;
+
 
 const AirComponent = ({ open, handleCancel }) => {
   const [imageData, setImageData] = useState([]);
@@ -42,8 +42,12 @@ const AirComponent = ({ open, handleCancel }) => {
               marginBottom: '16px',
             }}
             cover={<img alt={card.title} src={card.src} style={{ width: '100%' }} />}
+
           >
             <Meta title={card.title} description={card.description} />
+            {/* <Button type={text} onClick={() => sendMessage(card.title,card.description, '+971558531096')}>
+              Buy
+            </Button> */}
           </Card>
         ))}
       </div>

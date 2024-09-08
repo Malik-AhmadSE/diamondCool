@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Card, Flex, Typography } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
 import Air1 from '../../../assets/images/airproducts/air20.png';
-import Air2 from '../../../assets/images/airproducts/air18.png';
+import Air2 from '../../../assets/images/airproducts/air16.png';
 import Air3 from '../../../assets/images/airproducts/air9.png';
 const imgStyle = {
   display: 'block',

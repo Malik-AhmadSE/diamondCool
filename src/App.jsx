@@ -4,13 +4,22 @@ import Home from './pages/home/home.jsx';
 import Contact from './pages/contact/Contact.jsx';
 import Products from './pages/products/Products.jsx';
 import Construct from './pages/underConstruction/Construct.jsx';
+import Expert from './assets/images/david.jpeg';
 import About from './pages/about/About.jsx';
-import {WhatsAppOutlined} from "@ant-design/icons"
-import { FloatButton } from 'antd';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
-const floatButton = {
-  backgroundColor: 'green !important',                   
+export const MessageComponent = () => {
+  return (
+    <div>
+      Hi,<br />
+      Do you want to buy something?<br />
+      You can send me a message here.<br />
+      Thanks!
+    </div>
+  );
 };
+
+
 function App() {
 
   return (
@@ -21,8 +30,13 @@ function App() {
         <Route path='/product' element={<Products/>} />
         <Route path='/about' element={<About/>} />
     </Routes>
-    <a href="https://wa.me/+971558531096"><FloatButton  className='w-14 h-14 bg-green-700 border border-green-700' icon={<WhatsAppOutlined  className='text-black font-bold hover:text-white text-[20px]' />}/></a>
-    
+    {/* <a href="https://wa.me/+971558531096"><FloatButton  className='w-14 h-14 bg-green-700 border border-green-700' icon={<WhatsAppOutlined  className='text-black font-bold hover:text-white text-[20px]' />}/></a> */}
+    <FloatingWhatsApp phoneNumber='+971558531096' chatboxHeight={'350px'} darkMode={true} accountName='Helper' avatar={Expert} statusMessage="Online" chatMessage={   <>
+          Hi,
+          Do you want to buy something?<br />
+          You can send me a message here.<br />
+          Thanks!
+        </>} />
     {/* <Construct /> */}
    
     </div>
