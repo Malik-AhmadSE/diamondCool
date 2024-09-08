@@ -1,6 +1,5 @@
 import { Button, Image } from 'antd';
 import React from 'react'
-import ExpertisePic from '../../../assets/images/Expertise.jpg'
 import Email from '../../../assets/images/icons/email.png';
 import Call from '../../../assets/images/icons/call.png';
 import Locate from '../../../assets/images/icons/locate.png';
@@ -21,17 +20,17 @@ function ContactInfo() {
                 <Image src={Email} preview={false} className='!w-[20px]'/>
                 <h3 className='text-[15px] font-bold'>Email</h3>
                 </div>
-                <p className='italic underline -mt-4'>hello@gmail.com</p>
+                <p className='italic underline -mt-4'>diamondcooluae@gmail.com</p>
                 <div className='flex gap-3 items-center'>
                 <Image src={Call} preview={false} className='!w-[20px]'/>
                 <h3 className='text-[15px] font-bold'>Phone</h3>
                 </div>
-                <p className='italic underline -mt-4'>+1 (555) 000-0000</p>
+                <p className='italic underline -mt-4'>+97145773638</p>
                 <div className='flex gap-3 items-center'>
                 <Image src={Locate} preview={false} className='!w-[20px]'/>
                 <h3 className='text-[15px] font-bold'>Office</h3>
                 </div>
-                <p className='-mt-4'>123 Sample St, Sydney NSW 2000 AU</p>
+                <p className='-mt-4'>P.O.Box # 379672, shop # 18, Fish Round About, Deira Dubai-U.A.E</p>
             </div>
             </div>
         </div>

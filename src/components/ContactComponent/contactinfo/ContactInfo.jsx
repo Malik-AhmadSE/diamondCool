@@ -19,14 +19,14 @@ function ContactInfo() {
                 <Image src={Email} preview={false} className='!w-[25px]'/>
                 <h3 className='text-[20px] font-bold -mt-5'>Email</h3>
                 <p className='-mt-4'>Contact us anytime for support.</p>
-                <p className='italic underline -mt-4'>hello@gmail.com</p>
+                <p className='italic underline -mt-4'>diamondcooluae@gmail.com</p>
                 <Image src={Call} preview={false} className='!w-[25px]'/>
                 <h3 className='text-[20px] font-bold -mt-5'>Phone</h3>
                 <p className='-mt-4'>Call us for immediate assistance.</p>
-                <p className='italic underline -mt-4'>+1 (555) 000-0000</p>
+                <p className='italic underline -mt-4'>+971558531096</p>
                 <Image src={Locate} preview={false} className='!w-[25px]'/>
                 <h3 className='text-[20px] font-bold -mt-5'>Office</h3>
-                <p className='-mt-4'>123 Sample St, Sydney NSW 2000 AU</p>
+                <p className='-mt-4'>P.O.Box # 379672, shop # 18, Fish Round About, Deira Dubai-U.A.E</p>
             </div>
             <div className='w-[50%] pl-10 flex justify-center'>
                 <Image src={ExpertisePic} preview={false} className='w-auto' />
