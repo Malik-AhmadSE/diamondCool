@@ -9,7 +9,7 @@ function Expertise() {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false);
-        }, 10000);
+        }, 4000);
     }, []);
     return (
         <>
@@ -42,7 +42,7 @@ function Expertise() {
                 </div>
             </div>
             <div className='w-[50%] pl-10 flex justify-center'>
-                <Image src={ExpertisePic} preview={false} className='w-auto' />
+                <Image src='https://res.cloudinary.com/dvf9mmcww/image/upload/v1725969057/MainImages/adtq8ygnbvaag8obum9v.jpg' preview={false} className='w-auto' />
             </div>
         </div>)}
         </>

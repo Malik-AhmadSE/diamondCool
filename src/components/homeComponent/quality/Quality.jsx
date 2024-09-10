@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from 'react'
-import Last from '../../../assets/images/8.png';
 import Buttons from '../../buttons/Buttons';
 import { Image } from 'antd';
 import QualityLoader from '../../Common/skeleton/Quality.jsx';
@@ -8,7 +7,7 @@ function Quality() {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false);
-        }, 10000);
+        }, 4000);
     }, []);
   return (
     <>
@@ -16,7 +15,7 @@ function Quality() {
       loading ? (<QualityLoader/>):(
          <div className='w-full relative top-[950px] z-1 flex gap-3 flex-wrap'>
              <div className='w-[50%] pl-10 flex justify-center'>
-                <Image src={Last} preview={false} className='w-auto' />
+                <Image src={'https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982999/MainImages/lidrg44ffwswcp2ewgjn.png'} preview={false} className='w-auto' />
             </div>
             <div className='pl-10 flex flex-col justify-center items-center'>
                 <div>

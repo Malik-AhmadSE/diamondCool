@@ -12,7 +12,7 @@ function Services() {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false);
-        }, 10000);
+        }, 4000);
     }, []);
   return (
     <>
@@ -28,22 +28,22 @@ function Services() {
        </div>
        <div className='w-[59%] h-[550px] pl-5 bg-ServiceImage  bg-cover flex gap-5 flex-wrap'>
         <div>
-            <Image preview={false} width={50} src={Experts} />
+            <Image preview={false} width={50} src={'https://res.cloudinary.com/dvf9mmcww/image/upload/v1725984308/icons/ls6sg8eoahfhcuxuyuim.png'} />
             <h4 className='font-bold text-[25px] pt-4 tracking-wide'>Experienced Professionals</h4>
             <p className='w-[340px] text-[12px] tracking-wider pt-5'>Benefit from our in-depth knowledge and experience in providing high-quality spare parts for air conditioning and refrigeration systems.</p>
         </div>
         <div>
-            <Image preview={false} width={50} src={Clock} />
+            <Image preview={false} width={50} src={'https://res.cloudinary.com/dvf9mmcww/image/upload/v1725984307/icons/llq2qsojxmbcqeav8cv6.png'} />
             <h4 className='font-bold text-[25px] pt-4 tracking-wide'>Prompt Availability</h4>
             <p className='w-[340px] text-[12px] tracking-wider pt-5'>Count on our efficient service to quickly provide the spare parts you need, minimizing downtime and keeping your systems running smoothly.</p>
         </div>
         <div>
-            <Image preview={false} width={50} src={Tailored} />
+            <Image preview={false} width={50} src={'https://res.cloudinary.com/dvf9mmcww/image/upload/v1725984309/icons/eplczypbqok5ghrpqhkp.png'} />
             <h4 className='w-[250px] font-bold text-[25px] pt-4 tracking-wide'>Tailored Spare Parts Solutions</h4>
             <p className='w-[340px] text-[12px] tracking-wider pt-5'>Receive spare parts that match your specific needs and ensure optimal performance for your cooling and refrigeration systems.</p>
         </div>
         <div>
-            <Image preview={false} width={50} src={Top} />
+            <Image preview={false} width={50} src={'https://res.cloudinary.com/dvf9mmcww/image/upload/v1725984309/icons/yemitb99so8dk6ddjdev.png'} />
             <h4 className='font-bold  text-[25px] pt-4 tracking-wide'>Top-Quality Components</h4>
             <p className='w-[340px] text-[12px] tracking-wider pt-5'>Trust in the superior quality of our spare parts, designed to deliver reliable and long-lasting performance for your air conditioning and refrigeration systems.</p>
         </div>

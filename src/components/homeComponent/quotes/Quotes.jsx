@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from 'react';
 import { Image } from 'antd';
-import Quotes1 from "../../../assets/images/qoutes1.png";
 import { Button } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
 import QuotesLoader from '../../Common/skeleton/Quotes.jsx';
@@ -10,7 +9,7 @@ function Quotes() {
   useEffect(() => {
       setTimeout(() => {
           setLoading(false);
-      }, 10000);
+      }, 4000);
   }, []);
   return (
     <>
@@ -26,7 +25,7 @@ function Quotes() {
         </div>
           
           </div>
-          <Image src={Quotes1} width={350} className='relative bottom-36 left-[800px]'/>
+          <Image src={'https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982992/MainImages/by21peffcc7km0x402xd.png'} width={350} className='relative bottom-36 left-[800px]'/>
         </div>
       </div>)
     }

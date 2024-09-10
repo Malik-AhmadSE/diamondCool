@@ -7,11 +7,11 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'heroImage': "url('./assets/images/HeroImage.jpg')",
-        'ProductImage': "url('./assets/images/ProductImage.png')",
-        'ContactHeroImage': "url('./assets/images/hcontact.png')",
-        'ServiceImage': "url('./assets/images/Servicesbg.png')",
-        'QoutesImage': "url('./assets/images/qoutesbg.png')",
+        'heroImage': "url('https://res.cloudinary.com/dvf9mmcww/image/upload/v1725969053/MainImages/cugu6t9feamhonq9i7j3.jpg')",
+        'ProductImage': "url('https://res.cloudinary.com/dvf9mmcww/image/upload/v1725983019/MainImages/ddulcxa3c3o3pq9qdyov.png')",
+        'ContactHeroImage': "url('https://res.cloudinary.com/dvf9mmcww/image/upload/v1725983011/MainImages/lx8gj0w090hezy7hre0s.png')",
+        'ServiceImage': "url('https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982995/MainImages/kwkhxkwbdwo6vcvb2lgo.png')",
+        'QoutesImage': "url('https://res.cloudinary.com/dvf9mmcww/image/upload/v1725983009/MainImages/ahynwouaiagqs9ueophr.png')",
       },
       colors:{
         construction:"#9aff81",

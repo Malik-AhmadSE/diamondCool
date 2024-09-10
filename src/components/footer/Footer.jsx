@@ -10,7 +10,7 @@ function Footer() {
         <div className='w-full flex flex-col relative top-[1100px]'>
             <div className='w-full flex flex-row gap-10'>
                 <div className='w-[75%] pl-10'>
-                <Image src={Logo} className='!w-[150px]' preview={false} onClick={()=>{navigate('/')}} />
+                <Image src={"https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982984/MainImages/r4zxfbe2beagef7lakmb.jpg"} className='!w-[150px]' preview={false} onClick={()=>{navigate('/')}} />
                     <address className=' pt-10'>
                         <h6 className='font-medium'>Address:</h6>
                         <p>P.O.Box # 379672, shop # 18, Fish Round About, Deira Dubai-U.A.E</p>

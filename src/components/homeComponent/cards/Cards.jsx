@@ -10,7 +10,7 @@ const Cards = () => {
    useEffect(() => {
       setTimeout(() => {
          setLoading(false);
-      }, 10000);
+      }, 4000);
    }, []);
    return (
       <>
@@ -24,7 +24,7 @@ const Cards = () => {
          width: 350,
          height:400,
       }}
-      cover={<img alt="cards" src={cards1} />}>
+      cover={<img alt="cards" src={"https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982999/MainImages/p76nsaveb5bjgcyl0rms.png"} />}>
      <h1 className='font-bold text-[25px] pt-4 text-center'>
         Air Conditioning Spare Parts & Services
      </h1>
@@ -37,7 +37,7 @@ const Cards = () => {
       width: 350,
       height:400,
     }}
-    cover={<img alt="cards" src={cards2} />}
+    cover={<img alt="cards" src={'https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982992/MainImages/m3lmu6hnzrrgwv8qdan7.png'} />}
   >
      <h1 className='font-bold text-[25px] pt-4 text-center'>
      Refrigeration Spare Parts & Services
@@ -51,7 +51,7 @@ const Cards = () => {
       width: 350,
       height:400,
     }}
-    cover={<img alt="cards" src={cards3} />}
+    cover={<img alt="cards" src={'https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982996/MainImages/bufx4hqujo0txey9iapw.png'} />}
   >
      <h1 className='font-bold text-[25px] pt-4 text-center'>
      Home Appliance Services

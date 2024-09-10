@@ -10,7 +10,7 @@ import Serviceab from '../../components/AboutComponents/aboutservice/Serviceab.j
 function About() {
 
   return (
-    <>
+    <div className='flex flex-col justify-center'>
       <Navbar />
       <Hero />
       <ImageComponent />
@@ -24,7 +24,7 @@ function About() {
       </div>
       <div className='relative -top-[220px]'><Footer /></div>
       
-    </>
+    </div>
   )
 }
 

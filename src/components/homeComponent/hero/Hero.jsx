@@ -4,12 +4,12 @@ import { Button,Skeleton} from 'antd';
 function Hero() {
     // const [btn, setbtn] = React.useState("primary");
     // const [btn1, setbtn1] = React.useState("Default");
-    const [loading, setLoading] = useState(true); // Set initial loading state
+    const [loading, setLoading] = useState(true); 
 
     useEffect(() => {
       setTimeout(() => {
         setLoading(false);
-      }, 10000);
+      }, 4000);
     }, []);
 
   return (
@@ -17,7 +17,7 @@ function Hero() {
      {loading ? (
       <Skeleton.Image  className='!w-full relative top-24 z-0  !h-[600px] bg-cover flex flex-col justify-center items-center' />
      ):(
-      <div className='w-full relative top-24 z-0  h-[600px] bg-cover bg-heroImage flex flex-col justify-center items-center'>
+      <div className='w-full relative top-24 z-0  h-[650px] bg-cover bg-heroImage flex flex-col justify-center items-center'>
        
   </div>
      )}
