@@ -35,8 +35,8 @@ const Nav = () => {
 
   return (
     <>
-      <Flex gap="middle" vertical className="w-full overflow-hidden">
-        <Flex vertical={value === 'vertical'} className="md:fixed md:w-full md:top-0 md:left-0 z-40 bg-white hidden md:flex">
+      <Flex gap="middle" vertical className="w-screen !overflow-hidden">
+        <Flex vertical={value === 'vertical'} className="fixed md:w-full md:top-0 md:left-0 z-40 bg-white hidden md:flex">
           <div style={{ ...baseStyle }} className="flex items-center pl-10">
             <Image
               src="https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982988/MainImages/kntrbdys2pgk0cxzazfq.png"
@@ -66,7 +66,7 @@ const Nav = () => {
       </Flex>
 
       {/* Mobile Navbar */}
-      <Flex className="w-full md:hidden fixed top-0 left-0 z-40 bg-white p-4 justify-between items-center">
+      <Flex className="w-full md:hidden fixed top-0 left-0 z-40 bg-white p-4 justify-between items-center overflow-x-hidden">
         <Image
           src="https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982988/MainImages/kntrbdys2pgk0cxzazfq.png"
           className="!w-[120px]"
@@ -84,6 +84,9 @@ const Nav = () => {
         visible={drawerVisible}
         className="md:hidden p-5"
       >
+        <Button type="text" onClick={() => { navigate('/'); closeDrawer(); }} className="w-full text-left mb-5">
+          Home
+        </Button>
         <Button type="text" onClick={() => { navigate('/about'); closeDrawer(); }} className="w-full text-left mb-5">
           About Us
         </Button>

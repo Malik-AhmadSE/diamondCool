@@ -8,11 +8,11 @@ import Services from '../../components/homeComponent/services/Services';
 import Quotes from '../../components/homeComponent/quotes/Quotes';
 import Customer from '../../components/homeComponent/customer/Customer';
 import Quality from '../../components/homeComponent/quality/Quality';
-import Footer from '../../components/footer/Footer';
+import Footer from '../../components/footer/Footer.jsx';
 function Home() {
 
   return (
-    <>
+    <div className="!w-full !p-0 !m-0 overflow-hidden" >
       <Navbar />
       <Hero />
       <Expertise/>
@@ -23,7 +23,7 @@ function Home() {
       <Customer />
       <Quality />
       <Footer />
-    </>
+      </div>
   )
 }
 

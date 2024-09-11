@@ -1,32 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import { Button,Skeleton} from 'antd';
+import { Button, Image, Skeleton } from 'antd';
 
 function Hero() {
-    // const [btn, setbtn] = React.useState("primary");
-    // const [btn1, setbtn1] = React.useState("Default");
-    const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-      setTimeout(() => {
-        setLoading(false);
-      }, 4000);
-    }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
 
   return (
     <>
-     {loading ? (
-      <Skeleton.Image  className='!w-full relative top-24 z-0  !h-[600px] bg-cover flex flex-col justify-center items-center' />
-     ):(
-      <div className='w-full relative top-24 z-0  h-[650px] bg-cover bg-heroImage flex flex-col justify-center items-center'>
-       
-  </div>
-     )}
-      </>
-    
-  )
+      {loading ? (
+        <Skeleton.Image className='!w-full relative top-16 md:top-24 z-0 !h-[400px] md:!h-[600px] bg-cover flex flex-col justify-center items-center' />
+      ) : (
+        <Image src={'https://res.cloudinary.com/dvf9mmcww/image/upload/v1725969053/MainImages/cugu6t9feamhonq9i7j3.jpg'} preview={false} className='!w-full relative mt-16 z-0 h-[380px] md:h-[950px]flex flex-col justify-center items-center px-4' />
+      )}
+    </>
+  );
 }
 
 export default Hero;
+
 
 
 
