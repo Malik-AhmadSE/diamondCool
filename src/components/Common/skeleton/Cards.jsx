@@ -4,7 +4,7 @@ import { Card, Skeleton } from 'antd';
 const CardsLoader = () => (
 
   <>
-    <div className='relative top-[430px] !w-full flex gap-16 justify-center !mt-10'>
+    <div className='mt-48 !w-full flex gap-16 justify-center'>
       {[...Array(3)].map((_, index) => (
         <Card
           key={index}
@@ -23,7 +23,7 @@ const CardsLoader = () => (
         </Card>
       ))}
     </div>
-    <div className='relative top-[500px] !w-full flex justify-center gap-10 items-center'>
+    <div className='mt-24 !w-full flex justify-center gap-10 items-center'>
       <Skeleton.Button active style={{ width: 100, height: 40 }} />
       <Skeleton.Button active style={{ width: 100, height: 40 }} />
     </div>

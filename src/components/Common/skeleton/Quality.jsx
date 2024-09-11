@@ -3,7 +3,7 @@ import { Skeleton } from 'antd';
 
 const QualityLoader = () => {
   return (
-    <div className='!w-full relative top-[950px] z-1 flex gap-3 flex-wrap'>
+    <div className='!w-full mt-60 z-1 flex gap-3 flex-wrap'>
         <div className='!w-[50%] !h-full pl-10 flex justify-center'>
         <Skeleton.Image className='!w-full !h-[500px]'/>
       </div>

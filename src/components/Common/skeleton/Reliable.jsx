@@ -3,7 +3,7 @@ import { Skeleton } from 'antd';
 
 const ReliableLoader = () => {
   return (
-    <div className='relative top-96 flex flex-col !justify-center !items-center !text-center'>
+    <div className='mt-32 flex flex-col !justify-center !items-center !text-center'>
       <Skeleton.Input active style={{ width: 120, marginBottom: 10 }} size="small" /> {/* Skeleton for "Reliable" */}
       <Skeleton.Input active style={{ width: 750, height: 50, marginBottom: 20 }} /> {/* Skeleton for Main Title */}
       <div className='!w-[920px] !pt-5'>

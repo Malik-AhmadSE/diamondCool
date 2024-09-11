@@ -5,7 +5,7 @@ const CustomerLoader = () => {
     
   return (
     
-    <div className='relative !top-[850px] !pl-10'>
+    <div className='mt-48 !pl-10'>
       <h1 className='!w-[550px] font-bold text-[45px] pb-4'>
         <Skeleton.Input active style={{ width: '100%' }} />
       </h1>

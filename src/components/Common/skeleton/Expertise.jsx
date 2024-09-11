@@ -3,7 +3,7 @@ import { Skeleton } from 'antd';
 
 const ExpertiseLoader = () => {
   return (
-    <div className='!w-full relative top-64 z-1 flex gap-3 flex-wrap'>
+    <div className='!w-full mt-36 z-1 flex gap-3 flex-wrap'>
       <div className='!pl-10 flex flex-col'>
         <Skeleton.Input active style={{ width: 120, marginBottom: 10 }} size="small" /> {/* Skeleton for "Expertise" */}
         <Skeleton.Input active style={{ width: 550, height: 50, marginBottom: 20 }} /> {/* Skeleton for Main Title */}
