@@ -4,7 +4,6 @@ import { Card, Skeleton, Avatar, Rate } from 'antd';
 const CustomerLoader = () => {
     
   return (
-    
     <div className='mt-48 !pl-10'>
       <h1 className='!w-[550px] font-bold text-[45px] pb-4'>
         <Skeleton.Input active style={{ width: '100%' }} />

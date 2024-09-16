@@ -5,7 +5,7 @@ import Buttons from '../../buttons/Buttons';
 function Reliable() {
     
     return (
-        <div className='w-full relative top-[450px] z-1 flex gap-3 flex-wrap'>
+        <div className='w-full mt-[700px] z-1 flex gap-3 flex-wrap'>
             <div className='pl-10'>
                 <h6 className='font-semibold mb-2'>Reliable</h6>
                 <h1 className='w-[550px] font-bold text-[45px]'>Quality Spare Parts for Long-Lasting Performance</h1>

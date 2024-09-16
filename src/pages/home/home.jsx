@@ -9,19 +9,29 @@ import Quotes from '../../components/homeComponent/quotes/Quotes';
 import Customer from '../../components/homeComponent/customer/Customer';
 import Quality from '../../components/homeComponent/quality/Quality';
 import Footer from '../../components/footer/Footer.jsx';
+import Brands from '../../components/homeComponent/brands/brands.jsx';
+import Refrigrator from '../../components/homeComponent/crousels/Refrigrator.jsx';
+import AirCond from '../../components/homeComponent/crousels/Aircond.jsx';
+import Washing from '../../components/homeComponent/crousels/Washing.jsx';
 function Home() {
 
   return (
     <div className="!w-full !p-0 !m-0 overflow-hidden" >
       <Navbar />
-      <Hero />
-      <Expertise/>
+      <Hero /> 
+      <Brands />
+      <div>
+        <AirCond />
+        <Refrigrator />
+        <Washing /> 
+      </div>
+      {/* <Expertise/>
       <Reliable />
       <Cards />
       <Services />
       <Quotes />
       <Customer />
-      <Quality />
+      <Quality /> */}
       <Footer />
       </div>
   )

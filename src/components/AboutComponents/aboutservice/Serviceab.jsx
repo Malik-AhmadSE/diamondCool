@@ -7,7 +7,7 @@ import Set from '../../../assets/images/icons/set.png';
 function Serviceab() {
     return (
         <>
-        <div className='w-full relative top-72 z-1 flex gap-3 flex-wrap'>
+        <div className='w-full z-1 flex gap-3 flex-wrap'>
             <div className='pl-10'>
                 <h1 className='w-[600px] font-bold text-[45px]'>Discover Our Additional Services for Installation and Maintenance</h1>
             </div>
