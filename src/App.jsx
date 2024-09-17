@@ -23,7 +23,7 @@ export const MessageComponent = () => {
 function App() {
 
   return (
-    <div>
+    <div className='pl-5 pr-5'>
       <Routes>
         <Route path='/' element={ <Home />}/>
         <Route path='/contact' element={ <Contact />}/>

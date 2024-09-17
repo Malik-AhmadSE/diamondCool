@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Flex, Button, Input, Image, Drawer, Typography, Divider } from 'antd';
-import { MenuOutlined } from '@ant-design/icons'; // Import hamburger icon
+import { MenuOutlined,SearchOutlined, MailOutlined } from '@ant-design/icons'; // Import hamburger icon
 import { useNavigate } from 'react-router';
 import Learn from '../Common/learn/Learn.jsx';
-
+import Facebook from '../../assets/images/icons/facebook.png';
+import Insta from '../../assets/images/icons/insta.png';
+import Linkdin from '../../assets/images/icons/linkdin.png';
+import Tweeter from '../../assets/images/icons/tweeter.png';
 const baseStyle = {
   height: '70px',
 };
@@ -15,7 +18,12 @@ const Nav = () => {
   const [drawerVisible, setDrawerVisible] = useState(false); // State for drawer
   const [scrollingDown, setScrollingDown] = useState(false); // State to track scroll direction
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset); // Previous scroll position
+  const [searchValue, setSearchValue] = useState('');
 
+  const handleSearch = () => {
+    // Handle search logic here
+    console.log('Search value:', searchValue);
+  };
   const navigate = useNavigate();
 
   const handleCancel = () => {
@@ -53,32 +61,65 @@ const Nav = () => {
 
   return (
     <>
-      {/* Desktop Navbar */}
-      <div className={`!w-screen flex-col !h-36 fixed md:!w-full md:top-0 md:left-0 z-40 bg-white hidden md:flex transition-transform duration-300 ${scrollingDown ? '-translate-y-full' : 'translate-y-0'}`}>
+      <div className={`!w-screen !h-32 fixed md:!w-full md:top-0 md:left-0 z-40 bg-white hidden md:flex transition-transform duration-300 ${scrollingDown ? '-translate-y-full' : 'translate-y-0'}`}>
         <Flex gap="middle" vertical className="!w-screen overflow-hidden">
-          <Flex vertical={value === 'vertical'} className="w-full pr-5 flex items-center justify-between mt-3">
-            <div className="flex items-center pl-10">
+          <Flex vertical={value === 'vertical'} className="!w-full flex items-center justify-between mt-3">
+            <div className="flex flex-col !w-1/2  items-center justify-center">
               <Typography className='text-xl font-bold italic text-green-700'>
-                Diamond Cool
+                Diamond Cool Aircondition Spare Parts Trading LLC
               </Typography>
+              <Image
+                src="https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982988/MainImages/kntrbdys2pgk0cxzazfq.png"
+                className="md:!w-[350px]"
+                preview={false}
+                onClick={() => navigate('/')}
+              />
             </div>
-            <div>
-              <Flex vertical={value === 'vertical'} className="h-full flex items-center justify-center">
-                <Typography className='text-lg italic'>
-                  <span className='font-bold'>Email :</span> diamondcooluae@gmail.com
-                </Typography>
-              </Flex>
+            <div className='!w-1/2 flex flex-col items-center justify-center'>
+              <div className=" relative bottom-2 flex gap-28 items-center">
+                <div>
+                  <MailOutlined className=" text-green-700 mr-1" />
+                  <span>diamondcooluae@gmail.com</span>
+                </div>
+                <div>
+                  <div className='flex flex-row gap-3 items-center'>
+                    <Image width={30} src={Facebook} preview={false} />
+                    <Image width={30} src={Insta} preview={false} />
+                    <Image width={20} src={Linkdin} preview={false} />
+                    <Image width={20} src={Tweeter} preview={false} />
+                  </div>
+                </div>
+              </div>
+                {/* /////////////////////////////////////////// */}
+      <div className="w-[75%] flex items-center  border border-gray-300 rounded-lg overflow-hidden shadow-lg">
+      <Input
+        value={searchValue}
+        onChange={(e) => setSearchValue(e.target.value)}
+        placeholder="Search..."
+        className="border-none p-2 pl-4"
+      />
+      <Button type="primary" icon={<SearchOutlined className='p-2' />}
+        onClick={handleSearch}
+        className="relative right-1"
+      />
+    </div>
+
+    <Flex className="!w-full relative top-2  flex items-center justify-center gap-5">
+          <Button type="link" className='text-black font-semibold' onClick={() => navigate('/')}>Home</Button>
+          <Divider type="vertical" variant="solid" className='border border-black' />
+          <Button type="link"  className='text-black font-semibold' onClick={() => navigate('/product')}>Products</Button>
+          <Divider type="vertical"  variant="solid" className='border border-black' />
+          <Button type="link" className='text-black font-semibold' onClick={() => navigate('/about')}>About</Button>
+          <Divider type="vertical"  variant="solid" className='border border-black' />
+          {/* <Button type="link" className='text-black font-semibold' onClick={() => navigate('/new-arrival')}>New Arrival</Button>
+          <Divider type="vertical" variant="solid" className='border border-black' /> */}
+          <Button type="link" className='text-black font-semibold' onClick={() => navigate('/contact')}>Contact Us</Button>
+        </Flex> 
             </div>
-            <div >
-              <Flex vertical={value === 'vertical'} className="h-full flex items-center justify-center">
-                <Typography className='text-lg italic'>
-                  <span className='font-bold'>Whatsapp :</span> +971558531096
-                </Typography>
-              </Flex>
-            </div>
+
           </Flex>
         </Flex>
-        <Flex vertical={value === 'vertical'}>
+        {/* <Flex vertical={value === 'vertical'}>
           <div style={baseStyle} className="!w-full flex items-center justify-center pt-5 pb-8">
             <div className='flex items-center justify-center relative left-20 top-3'>
               <Image
@@ -98,8 +139,8 @@ const Nav = () => {
               </div>
             </div>
           </div>
-        </Flex>
-        <Flex className="!w-full flex items-center justify-center gap-6">
+        </Flex> */}
+        {/* <Flex className="!w-full flex items-center justify-center gap-6">
           <Button type="text" onClick={() => navigate('/')}>Home</Button>
           <Divider type="vertical" variant="solid" className='border border-black' />
           <Button type="text" onClick={() => navigate('/product')}>Products</Button>
@@ -109,7 +150,7 @@ const Nav = () => {
           <Button type="text" onClick={() => navigate('/new-arrival')}>New Arrival</Button>
           <Divider type="vertical" variant="solid" className='border border-black' />
           <Button type="text" onClick={() => navigate('/contact')}>Contact Us</Button>
-        </Flex>
+        </Flex> */}
       </div>
 
       {/* Mobile Navbar */}
@@ -188,3 +229,29 @@ export default Nav;
 //             </Flex>
 //           </div>
 //         </Flex>
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <div>
+              <Flex vertical={value === 'vertical'} className="h-full flex items-center justify-center">
+                <Typography className='text-lg italic'>
+                  <span className='font-bold'>Email :</span> diamondcooluae@gmail.com
+                </Typography>
+              </Flex>
+            </div> */}
+{/* <div >
+              <Flex vertical={value === 'vertical'} className="h-full flex items-center justify-center">
+                <Typography className='text-lg italic'>
+                  <span className='font-bold'>Whatsapp :</span> +971558531096
+                </Typography>
+              </Flex>
+            </div> */}
