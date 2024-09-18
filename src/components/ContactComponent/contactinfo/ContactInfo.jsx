@@ -8,12 +8,12 @@ import Locate from '../../../assets/images/icons/locate.png';
 function ContactInfo() {
     return (
         <>
-        <div className='w-full relative top-36 pl-10'>
+        <div className='w-full mt-36 pl-10'>
         <h6 className='font-semibold mb-2'>Reach Us</h6>
         <h1 className='w-[550px] font-bold text-[45px]'>Get in Touch</h1>
         <p className='w-[550px] pt-5 tracking-wider'>We’re here to assist you with any inquiries.</p>
         </div>
-        <div className='w-full relative top-36 z-1 flex gap-3 flex-wrap'>
+        <div className='w-full mt-4 z-1 flex gap-3 flex-wrap'>
             <div className='pl-10 pt-10 flex flex-col gap-10 w-[45%]'>
                 <Image src={Email} preview={false} className='!w-[25px]'/>
                 <h3 className='text-[20px] font-bold -mt-5'>Email</h3>

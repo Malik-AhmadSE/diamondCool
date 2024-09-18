@@ -61,7 +61,7 @@ const Nav = () => {
 
   return (
     <>
-      <div className={`!w-screen !h-32 fixed md:!w-full md:top-0 md:left-0 z-40 bg-white hidden md:flex transition-transform duration-300 ${scrollingDown ? '-translate-y-full' : 'translate-y-0'}`}>
+      <div className={`!w-screen !h-32 bg-fuchsia-200 fixed md:!w-full md:top-0 md:left-0 z-40  hidden md:flex transition-transform duration-300 ${scrollingDown ? '-translate-y-full' : 'translate-y-0'}`}>
         <Flex gap="middle" vertical className="!w-screen overflow-hidden">
           <Flex vertical={value === 'vertical'} className="!w-full flex items-center justify-between mt-3">
             <div className="flex flex-col !w-1/2  items-center justify-center">
@@ -91,7 +91,7 @@ const Nav = () => {
                 </div>
               </div>
                 {/* /////////////////////////////////////////// */}
-      <div className="w-[75%] flex items-center  border border-gray-300 rounded-lg overflow-hidden shadow-lg">
+      <div className="w-[75%] flex items-center bg-white  border border-gray-300 rounded-lg overflow-hidden shadow-lg">
       <Input
         value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
