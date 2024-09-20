@@ -15,9 +15,9 @@ const Divs = () => (
         
       },
     }}
-   className='md:!w-[660px] w-[470px] md:h-[400px] h-[300px]'
+   className='md:!w-[660px] w-full md:h-[400px] h-full'
   >
-    <Flex className='h-full items-center'>
+    <Flex className='h-full items-center flex flex-wrap md:flex-nowrap'>
       
       <Flex
         vertical
@@ -35,7 +35,7 @@ const Divs = () => (
       <img
         alt="avatar"
         src={Air1}
-        className='md:w-[320px] w-[240px] ml-15 rounded-e-md'
+        className='md:w-[320px] w-full ml-15 rounded-e-md'
       />
     </Flex>
   </Card>
