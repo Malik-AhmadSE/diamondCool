@@ -17,7 +17,7 @@ const AirComponent = ({ open, handleCancel }) => {
 
   return (
     <Modal
-      title="Washing Machine Spare Parts"
+      title="Refregrator Spare Parts"
       open={open}
       onCancel={handleCancel}
       footer={null}
@@ -29,7 +29,7 @@ const AirComponent = ({ open, handleCancel }) => {
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          gap: '20px',
+          gap: '40px',
           padding: '20px',
         }}
       >
@@ -38,8 +38,7 @@ const AirComponent = ({ open, handleCancel }) => {
             key={index}
             hoverable
             style={{
-              width: 'calc(100% / 2 - 20px)', // Responsive width for two cards per row
-              maxWidth: 240, // Max width for larger screens
+              width: 240,
               marginBottom: '16px',
             }}
             cover={<img alt={card.title} src={card.image} style={{ width: '100%' }} />}

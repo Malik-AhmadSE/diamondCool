@@ -17,13 +17,13 @@ function Contact() {
       <Hero />
       <ContactInfo />
       <Form />
-      <div className=' relative top-56 pt-10'>
+      <div className='mt-36 pt-10'>
       <ContactDiv />
       </div>
-      <div className=' relative top-[500px]'>
+      <div className='mt-36'>
         <Location />
       </div>
-      <div className='relative top-[600px]'>
+      <div className='mt-40'>
         <Faq />
         <CeoRating />
         <Discover />

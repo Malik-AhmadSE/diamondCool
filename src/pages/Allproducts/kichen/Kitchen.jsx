@@ -4,7 +4,7 @@ import { CloseOutlined } from '@ant-design/icons';
 import { ImageImporter } from './ImageImporter/ImageImporter.jsx'; // Ensure ImageImporter works correctly
 const { Meta } = Card;
 
-const AirComponent = ({ open, handleCancel }) => {
+const KichenComponent = ({ open, handleCancel }) => {
   const [imageData, setImageData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -12,9 +12,10 @@ const AirComponent = ({ open, handleCancel }) => {
     const fetchData = async () => {
       setLoading(true);
 
+      // Simulate a delay (e.g., 1.5 seconds) using setTimeout
       setTimeout(() => {
         try {
-          const data = ImageImporter();
+          const data = ImageImporter(); // Assume this is a synchronous function
           console.log('Fetched data:', data);
           setImageData(data);
           setLoading(false);
@@ -22,7 +23,7 @@ const AirComponent = ({ open, handleCancel }) => {
           console.error('Error loading images or data:', error);
           setLoading(false);
         }
-      }, 1000); // Reduced to 1 second for testing
+      }, 1500); // Reduced for testing
     };
 
     fetchData();
@@ -30,7 +31,7 @@ const AirComponent = ({ open, handleCancel }) => {
 
   return (
     <Modal
-      title="Air Conditioners Spare Parts"
+      title="Kitchen Spare Parts"
       open={open}
       onCancel={handleCancel}
       footer={null}
@@ -52,8 +53,8 @@ const AirComponent = ({ open, handleCancel }) => {
               key={index}
               hoverable
               style={{
-                width: 'calc(100% / 2 - 20px)', // Responsive width for two cards per row
-                maxWidth: 240, // Max width for larger screens
+                width: 'calc(100% / 2 - 20px)', // Responsive width
+                maxWidth: 240,
                 marginBottom: '16px',
               }}
             >
@@ -68,8 +69,8 @@ const AirComponent = ({ open, handleCancel }) => {
               key={index}
               hoverable
               style={{
-                width: 'calc(100% / 2 - 20px)', // Responsive width for two cards per row
-                maxWidth: 240, // Max width for larger screens
+                width: 'calc(100% / 2 - 20px)', // Responsive width
+                maxWidth: 240,
                 marginBottom: '16px',
               }}
               cover={<img alt={card.title} src={card.image} style={{ width: '100%' }} />}
@@ -83,4 +84,4 @@ const AirComponent = ({ open, handleCancel }) => {
   );
 };
 
-export default AirComponent;
+export default KichenComponent;

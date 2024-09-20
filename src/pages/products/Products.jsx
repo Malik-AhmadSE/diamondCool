@@ -20,16 +20,17 @@ function Product() {
       <Quality />
       <Products />
       <QualityQoutes />
-      <div className=' relative top-[400px] pt-10'>
+      <div className=' mt-20 pt-10'>
       <Divs />
       </div>
-      <div className=' relative top-[300px] pt-10 pb-10'>
+      <div className=' mt-16 pt-10 pb-10'>
        <DiscoverDiv />
 
         {/* <a href="https://wa.me/+1234567890">Click here to chat on WhatsApp</a> */}
       </div>
-      <Services />
-      <div className='relative top-[400px]'>
+      <div className='mb-72 md:mb-0'><Services /></div>
+      
+      <div className='-mt-20'>
         <Faq />
         <CeoRating />
         <Discover />

@@ -16,13 +16,13 @@ function About() {
       <ImageComponent />
       <Reliable />
       <Expertise />
-      <div className=' relative top-[300px] pt-10 pb-10'>
+      <div className='mt-64 pt-10'>
        <Serviceab />
       </div>
-      <div className='relative top-[220px]'>
+      <div className='md:-mt-72 mt-24'>
         <CeoRating />
       </div>
-      <div className='relative -top-[220px]'><Footer /></div>
+      <Footer />
       
     </div>
   )

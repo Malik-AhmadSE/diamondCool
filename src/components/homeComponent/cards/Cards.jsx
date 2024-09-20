@@ -5,7 +5,6 @@ import CardsLoader from '../../Common/skeleton/Cards.jsx';
 
 const Cards = () => {
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);

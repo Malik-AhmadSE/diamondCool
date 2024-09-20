@@ -7,7 +7,7 @@ import { Button } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
 function Services() {
   return (
-    <div className='relative top-[600px] w-full flex gap-3 pb-10 pl-10'>
+    <div className='mt-16 w-full flex gap-3 pl-10'>
        <div className='w-[100%] h-[550px] pl-5 flex gap-10 flex-wrap'>
         <div>
             <Image preview={false} width={50} src={Experts} />

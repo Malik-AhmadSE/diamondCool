@@ -1,35 +1,34 @@
-import React from 'react'
-import { Button, Card, Flex, Typography } from 'antd';
+import React from 'react';
+import { Button, Card, Typography } from 'antd';
 import Buttons from '../../buttons/Buttons';
 import Air3 from '../../../assets/images/airproducts/air15.png';
-function Discover() {
-  return (
-    <div className='w-full relative top-[450px] flex justify-center item-center mb-[150px]'>
-       <Card hoverable className=' w-[80%] h-[450px] !overflow-hidden !p-0'>
-    <Flex justify="space-between">
-    <Flex
-        vertical
-        style={{
-          padding: 10,
-        }}
-        className=' justify-center '
-      >
-        <h1 className='w-[500px] font-bold text-[45px]'>
-        Discover Our Amazing Product Range
-        </h1>
-        <p className='w-[500px] pt-5 tracking-wider pb-10'>Explore our wide selection of high-quality refrigerators, air conditioners, washing machines, and more.</p>
-        <Buttons />
-      </Flex>
-      <img
-        alt="avatar"
-        src={Air3}
-        className='!w-[320px] flex justify-center items-center'
-      />
-      
-    </Flex>
-  </Card>
 
-    </div>
-  )
+function Discover() {
+  return (
+    <div className='w-full mt-56 flex justify-center item-center mb-[150px]'>
+       <Card 
+        hoverable 
+        className='w-[90%] md:w-[80%] h-auto !overflow-hidden !p-0' 
+      >
+        <div className='flex flex-col md:flex-row justify-between'>
+          <div className='flex flex-col justify-center p-5 md:p-10'>
+            <h1 className='font-bold text-[32px] md:text-[45px]'>
+              Discover Our Amazing Product Range
+            </h1>
+            <p className='pt-5 tracking-wider pb-10 text-[14px] md:text-[16px]'>
+              Explore our wide selection of high-quality refrigerators, air conditioners, washing machines, and more.
+            </p>
+            <Buttons />
+          </div>
+          <img
+            alt="Product"
+            src={Air3}
+            className='!w-[80%] md:!w-[320px] self-center'
+          />
+        </div>
+      </Card>
+    </div>
+  );
 }
+
 export default Discover;

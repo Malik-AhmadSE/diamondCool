@@ -4,12 +4,9 @@ import { RightOutlined } from '@ant-design/icons';
 import Air1 from '../../../assets/images/airproducts/air20.png';
 import Air2 from '../../../assets/images/airproducts/air16.png';
 import Air3 from '../../../assets/images/airproducts/air9.png';
-const imgStyle = {
-  display: 'block',
-  width: 273,
-};
+
 const Divs = () => (
-  <div className='flex  !justify-center gap-10 !items-center p-10'>
+  <div className='flex flex-wrap md:flex-nowrap  !justify-center gap-10 !items-center p-10'>
     <Card
     hoverable
     styles={{
@@ -18,7 +15,7 @@ const Divs = () => (
         
       },
     }}
-   className='!w-[660px] h-[400px]'
+   className='md:!w-[660px] w-[470px] md:h-[400px] h-[300px]'
   >
     <Flex className='h-full items-center'>
       
@@ -38,7 +35,7 @@ const Divs = () => (
       <img
         alt="avatar"
         src={Air1}
-        className='w-[320px] ml-15 rounded-e-md'
+        className='md:w-[320px] w-[240px] ml-15 rounded-e-md'
       />
     </Flex>
   </Card>
@@ -68,13 +65,12 @@ const Divs = () => (
       <Button type='text' icon={<RightOutlined />} iconPosition='end' className='font-semibold text-black '>Shop</Button>
       </div>
       </Flex>
-    {/* Image after content */}
+
     <div style={{ marginTop: '4px' }}>
       <img 
         alt="Image001" 
         src={Air3}
-        style={{ width: '100%',height:'240px' }}
-      />
+        style={{ width: '100%',height:'240px' }}/>
     </div>
   </Card>
   <Card
