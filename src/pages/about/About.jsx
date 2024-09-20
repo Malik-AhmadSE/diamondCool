@@ -16,10 +16,10 @@ function About() {
       <ImageComponent />
       <Reliable />
       <Expertise />
-      <div className='mt-64 pt-10'>
+      <div className='md:mt-64 pt-10'>
        <Serviceab />
       </div>
-      <div className='md:-mt-72 mt-24'>
+      <div className='md:-mt-72 mt-40'>
         <CeoRating />
       </div>
       <Footer />

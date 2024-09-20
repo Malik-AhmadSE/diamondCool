@@ -21,22 +21,22 @@ const cardDataref = [
     { id: 4, title: "Product 4", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726649139/Refrigerator/mcmwcxy4wsmj3x5eza0b.jpg' },
   ];
 const cardDatawash = [
-      { id: 1, title: "Product 1", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726648833/airproducts/nslssswr7y4aos9azvpl.jpg' },
-      { id: 2, title: "Product 2", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726648833/airproducts/tsepi9tchku0ypliagdw.jpg' },
-      { id: 3, title: "Product 3", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726648835/airproducts/k0eb6hhmizqj8c5wadvo.jpg' },
-      { id: 4, title: "Product 4", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726648835/airproducts/vkvq0briuwjirygmzzn8.jpg' },
+      { id: 1, title: "Product 1", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726650153/Washinmachines/qilfrksft7ro2oy316pj.jpg' },
+      { id: 2, title: "Product 2", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726650154/Washinmachines/pgmwtuowklhccrqsxdxl.jpg' },
+      { id: 3, title: "Product 3", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726650155/Washinmachines/d4ixxnnmoosshyttv3wo.jpg' },
+      { id: 4, title: "Product 4", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726650155/Washinmachines/yfv3cpuranjbq2gpg7wq.jpg' },
     ];  
 const cardDatakic = [
-      { id: 1, title: "Product 1", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726648833/airproducts/nslssswr7y4aos9azvpl.jpg' },
-      { id: 2, title: "Product 2", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726648833/airproducts/tsepi9tchku0ypliagdw.jpg' },
-      { id: 3, title: "Product 3", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726648835/airproducts/k0eb6hhmizqj8c5wadvo.jpg' },
-      { id: 4, title: "Product 4", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726648835/airproducts/vkvq0briuwjirygmzzn8.jpg' },
+      { id: 1, title: "Product 1", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726652083/kitchen/hh8hfxorbadf6suuvyaz.jpg' },
+      { id: 2, title: "Product 2", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726652082/kitchen/gedyxyaqmileftt9kr1j.jpg' },
+      { id: 3, title: "Product 3", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726652082/kitchen/xcgs7hespz8noygjkir1.jpg' },
+      { id: 4, title: "Product 4", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726652081/kitchen/cfat5sxdqprhyyrlv6e0.jpg' },
     ];
 const cardDatatool = [
-        { id: 1, title: "Product 1", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726648833/airproducts/nslssswr7y4aos9azvpl.jpg' },
-        { id: 2, title: "Product 2", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726648833/airproducts/tsepi9tchku0ypliagdw.jpg' },
-        { id: 3, title: "Product 3", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726648835/airproducts/k0eb6hhmizqj8c5wadvo.jpg' },
-        { id: 4, title: "Product 4", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726648835/airproducts/vkvq0briuwjirygmzzn8.jpg' },
+        { id: 1, title: "Product 1", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726676561/tools/nyhb5f93wrhqydzhjonl.jpg' },
+        { id: 2, title: "Product 2", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726676562/tools/mquveca7wemf90kgfll5.jpg' },
+        { id: 3, title: "Product 3", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726676563/tools/an7b04hutdtim4dfiwto.jpg' },
+        { id: 4, title: "Product 4", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726676562/tools/atynyeqasuef9auauxl4.jpg' },
       ];
 
 

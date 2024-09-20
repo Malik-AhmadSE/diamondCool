@@ -3,7 +3,7 @@ import Buttons from '../../buttons/Buttons';
 
 function Quality() { 
     return ( 
-        <div className='w-full md:mt-48 -mt-56 z-1 flex flex-col md:flex-row gap-3'> {/* Change flex direction based on screen size */}
+        <div className='w-full md:mt-48 -mt-72 z-1 flex flex-col md:flex-row gap-3'> {/* Change flex direction based on screen size */}
             <div className='pl-10'>
                 <h1 className='text-4xl md:text-[45px] font-bold'> {/* Responsive font size */}
                     Quality Appliances for Every Home
