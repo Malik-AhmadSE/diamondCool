@@ -20,7 +20,7 @@ function AirCond() {
             <img
               src={url}
               alt={`Image ${index + 1}`}
-              className="w-full md:h-full h-[200px] "
+              className="w-full md:h-full h-[100px] "
               style={{ display: 'block' }}
             />
           </div>
