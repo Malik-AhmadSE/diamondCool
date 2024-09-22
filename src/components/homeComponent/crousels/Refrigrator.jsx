@@ -3,10 +3,10 @@ import { Carousel } from 'antd';
 import Pic from '../../../assets/images/pic.jpg';
 // URLs or paths to your images
 const imageUrls = [
-  'https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D',
-  'https://plus.unsplash.com/premium_photo-1672116453187-3aa64afe04ad?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D',
-  'https://media.istockphoto.com/id/1961324209/photo/a-concept-where-various-creative-thoughts-are-formed-within-a-light-bulb-3d-rendering.webp?a=1&b=1&s=612x612&w=0&k=20&c=aIsQVOCPJlvUQk18ZRXbfa-PVFzdJm69KYHDnth-2hg=',
-  `${Pic}`
+  'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726937571/15_o2gyqv.jpg',
+  'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726937571/17_fl1yrf.jpg',
+  'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726937571/16_wuoiqh.jpg',
+  'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726937570/14_fpqyr1.jpg'
 ];
 
 function Refirgrator() {
@@ -15,11 +15,11 @@ function Refirgrator() {
       <h2 className="text-2xl font-bold mb-4">Refirgrator Spare Parts</h2>
       <Carousel autoplay speed={300} className="w-full">
         {imageUrls.map((url, index) => (
-          <div key={index} className="w-full h-96 flex items-center justify-center">
+          <div key={index} className="w-full md:h-96 flex items-center justify-center">
             <img
               src={url}
               alt={`Image ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full md:h-full h-[200px]"
               style={{ display: 'block' }}
             />
           </div>

@@ -13,6 +13,8 @@ import Brands from '../../components/homeComponent/brands/brands.jsx';
 import Refrigrator from '../../components/homeComponent/crousels/Refrigrator.jsx';
 import AirCond from '../../components/homeComponent/crousels/Aircond.jsx';
 import Washing from '../../components/homeComponent/crousels/Washing.jsx';
+import Kitchen from '../../components/homeComponent/crousels/kitchen.jsx';
+import Tool from '../../components/homeComponent/crousels/tools.jsx';
 function Home() {
 
   return (
@@ -24,6 +26,8 @@ function Home() {
         <AirCond />
         <Refrigrator />
         <Washing /> 
+        <Kitchen />
+        <Tool />
       </div>
       {/* <Expertise/>
       <Reliable />
