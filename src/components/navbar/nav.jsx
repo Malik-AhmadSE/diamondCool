@@ -106,11 +106,11 @@ const Nav = () => {
           onClick={() => { navigate('/'); }}
         />
         <div className='w-full flex justify-between'>
-        <div className='w-[50%]'>
+        <div className='w-[60%]'>
           <MailFilled className="text-yellow-500 mr-1  text-[12px] italic" />
           <span className='text-yellow-500 text-[12px] italic'>diamondcooluae@gmail.com</span>
           </div>
-          <div className='w-[50%]'>
+          <div className='w-[40%]'>
           <PhoneFilled className="text-yellow-500 mr-1  text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
           <span className='text-yellow-500 text-[12px] italic'>+97145773638</span>
           </div>
