@@ -17,7 +17,7 @@ function Serviceab() {
                 </div>
             </div>
             <div className='mt-20 w-full flex gap-3 pb-10  flex-wrap'>
-                <div className='w-full h-[550px] pl-5 flex gap-10 flex-wrap'>
+                <div className='w-full h-[550px] flex gap-10 flex-wrap'>
                     <div className='w-full md:w-[30%] flex flex-col items-center'>
                         <Image preview={false} width={50} src={Quality} />
                         <h4 className='font-bold text-[30px] pt-4 tracking-wide text-center'>Quality Parts for Reliable Appliance Performance</h4>
