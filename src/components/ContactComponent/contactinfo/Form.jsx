@@ -15,10 +15,11 @@ function ContactInfo() {
     const [btn, setbtn] = React.useState("primary");
 
     return (
-        <>
-            <div className='w-full flex flex-col justify-center items-center mt-28 pl-10'>
+        <div className='flex justify-center items-center md:mt-28 mt-16'>
+            <div>
+            <div className='w-full flex flex-col justify-center items-center '>
                 <h6 className='font-semibold mb-2'>Get in Touch</h6>
-                <h1 className='font-bold text-[45px]'>Contact Us</h1>
+                <h1 className='font-bold md:text-[45px] text-[25px]'>Contact Us</h1>
                 <p className='pt-5 tracking-wider'>We'd love to hear from you!</p>
             </div>
             <div className='w-full mt-16 z-1 flex justify-center items-center gap-3 flex-wrap'>
@@ -93,7 +94,8 @@ function ContactInfo() {
                     </Button>
                 </Form>
             </div>
-        </>
+        </div>
+        </div>
     );
 }
 

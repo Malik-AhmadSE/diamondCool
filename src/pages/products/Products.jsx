@@ -30,7 +30,7 @@ function Product() {
       </div>
       <div className='mb-72 md:mb-0'><Services /></div>
       
-      <div className='-mt-20'>
+      <div className='relative top-32 md:top-0 md:-mt-20'>
         <Faq />
         <CeoRating />
         <Discover />

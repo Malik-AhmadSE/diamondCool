@@ -4,9 +4,10 @@ import React from 'react'
 function Faq() {
     const [btn, setbtn] = React.useState("primary");
   return (
-    <div className='flex flex-col  pl-10'>
-        <div className='w-full flex flex-col gap-5'>
-        <h1 className='md:w-[550px] font-bold text-[45px]'>FAQ's</h1>
+    <div className='flex justify-center items-center'>
+      <div className='w-[95%] flex flex-col'>
+        <div className='w-full flex flex-col gap-10'>
+        <h1 className='md:w-[550px] font-bold text-[30px] md:text-[45px]'>FAQ's</h1>
         <p className='md:w-[620px] pt-5 tracking-wider'>Find answers to common questions about our products and services right here.</p>
         </div>
         <div className='pt-10 w-full flex gap-16 flex-wrap'>
@@ -40,6 +41,7 @@ function Faq() {
         <p className='md:w-[620px] pt-5 tracking-wider'>We're here to help you with any inquiries.</p>
         </div> 
         <Button type={btn} onMouseEnter={() => setbtn('primary')} className='bg-transparent w-24 pt-4 pb-4 pl-5 pr-5 mt-5 font-semibold text-green-700 border hover:!bg-black hover:border hover:border-black border-green-700 hover:text-white'>Contact</Button>
+    </div>
     </div>
   )
 }

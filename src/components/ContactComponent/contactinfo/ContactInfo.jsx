@@ -7,8 +7,9 @@ import Locate from '../../../assets/images/icons/locate.png';
 
 function ContactInfo() {
     return (
-        <>
-            <div className='w-full mt-36 pl-10'>
+        <div className='flex justify-center items-center md:mt-36 mt-20'>
+            <div>
+            <div className='w-[90%] '>
                 <h6 className='font-semibold mb-2'>Reach Us</h6>
                 <h1 className='w-full md:w-[550px] font-bold text-[45px]'>Get in Touch</h1>
                 <p className='w-full md:w-[550px] pt-5 tracking-wider'>We’re here to assist you with any inquiries.</p>
@@ -43,7 +44,8 @@ function ContactInfo() {
                     <Image src={ExpertisePic} preview={false} className='w-auto' />
                 </div>
             </div>
-        </>
+            </div>
+        </div>
     );
 }
 

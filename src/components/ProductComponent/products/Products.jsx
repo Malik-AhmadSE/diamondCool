@@ -61,10 +61,11 @@ const showtoolModal = () => setOpentool(true);
   const handleToolCancel = () => setOpentool(false);
 
   return (
-    <div className='flex flex-col gap-5 mt-10 pt-10 pl-10'>
+    <div className='w-full flex items-center justify-center'>
+  <div className='w-full flex flex-col md:gap-5 mt-10 pt-10'>
       <div>
         <h6 className='font-semibold mb-2'>Categories</h6>
-        <h1 className='md:w-[550px] font-bold text-[45px]'>Products</h1>
+        <h1 className='md:w-[550px] font-bold md:text-[45px] text-[30px]'>Products</h1>
         <p className='md:w-[550px] pt-5 tracking-wider'>
           We offer High Quality Spare Parts for air Conditioners, Refrigerators, and washing machines.
         </p>
@@ -73,7 +74,7 @@ const showtoolModal = () => setOpentool(true);
       {/* Air Conditioners Section */}
       <div>
         <div className='flex justify-between items-center md:pr-10 pt-5'>
-          <h1 className='md:w-[550px] font-bold text-[25px] md:text-[45px]'>Air Conditioners</h1>
+          <h1 className='md:w-[550px] font-bold text-[30px] md:text-[45px]'>Air Conditioners</h1>
           <Button type='link' iconPosition='end' icon={<RightOutlined />} className='font-semibold text-black -ml-4' onClick={showAirModal}>View More</Button>
           <AirComponent open={openAir} handleCancel={handleAirCancel} />
         </div>
@@ -92,8 +93,8 @@ const showtoolModal = () => setOpentool(true);
       </div>
 
       {/* Refrigerators Section */}
-      <div className='flex justify-between items-center md:pr-10'>
-        <h1 className='md:w-[550px] font-bold text-[25px] md:text-[45px]'>Refrigerators</h1>
+      <div className='flex justify-between items-center pt-10 md:pr-10'>
+        <h1 className='md:w-[550px] font-bold text-[30px] md:text-[45px]'>Refrigerators</h1>
         <Button type='link' iconPosition='end' icon={<RightOutlined />} className='font-semibold text-black -ml-4' onClick={showRefModal}>View More</Button>
         <Ref open={openRef} handleCancel={handleRefCancel} />
       </div>
@@ -111,7 +112,7 @@ const showtoolModal = () => setOpentool(true);
       </div>
 
       {/* Washing Machines Section */}
-      <div className='flex justify-between items-center md:pr-10'>
+      <div className='flex justify-between items-center pt-10 md:pr-10'>
         <h1 className='md:w-[550px] font-bold text-[25px] md:text-[45px]'>Washing Machines</h1>
         <Button type='link' iconPosition='end' icon={<RightOutlined />} className='font-semibold text-black -ml-4' onClick={showWasModal}>View More</Button>
         <Was open={openWas} handleCancel={handleWasCancel} />
@@ -130,7 +131,7 @@ const showtoolModal = () => setOpentool(true);
       </div>
 
       {/* Kitchen Section */}
-      <div className='flex justify-between items-center md:pr-10'>
+      <div className='flex justify-between items-center pt-10 md:pr-10'>
         <h1 className='md:w-[550px] font-bold text-[25px] md:text-[45px]'>Kitchen</h1>
         <Button type='link' iconPosition='end' icon={<RightOutlined />} className='font-semibold text-black -ml-4' onClick={showKiModal}>View More</Button>
         <Kichen open={openki} handleCancel={handleKiCancel} />
@@ -149,7 +150,7 @@ const showtoolModal = () => setOpentool(true);
       </div>
 
       {/* Tool Section */}
-      <div className='flex justify-between items-center md:pr-10'>
+      <div className='flex justify-between items-center pt-10 md:pr-10'>
         <h1 className='md:w-[550px] font-bold text-[25px] md:text-[45px]'>Tools</h1>
         <Button type='link' iconPosition='end' icon={<RightOutlined />} className='font-semibold text-black -ml-4' onClick={showtoolModal}>View More</Button>
         <Tool open={opentool} handleCancel={handleToolCancel} />
@@ -167,6 +168,7 @@ const showtoolModal = () => setOpentool(true);
         ))}
       </div>
     </div>
+</div>
   );
 }
 

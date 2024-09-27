@@ -13,9 +13,9 @@ function Hero() {
   return (
     <>
       {loading ? (
-        <Skeleton.Image className='!w-full mt-24 md:top-24 z-0 !h-[200px] md:!h-[400px] bg-cover flex flex-col justify-center items-center' />
+        <Skeleton.Image className='!w-full mt-36 md:mt-24 z-0 !h-[200px] md:!h-[360px] bg-cover flex flex-col justify-center items-center mb-14' />
       ) : (
-        <Image src={'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726940479/poster_hljucd.jpg'} preview={false} className='!w-full mt-36 z-0 h-[380px] md:h-[950px]flex flex-col justify-center items-center px-4' />
+        <Image src={'https://res.cloudinary.com/dvf9mmcww/image/upload/v1727241513/poster_hljucd.jpg'} preview={false} className='!w-full mt-36 md:mt-44 z-0 h-[400px] md:h-[950px]flex flex-col justify-center items-center px-4' />
       )}
     </>
   );

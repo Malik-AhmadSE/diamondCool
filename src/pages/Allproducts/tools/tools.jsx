@@ -10,14 +10,13 @@ const AirComponent = ({ open, handleCancel }) => {
   const [imageData, setImageData] = useState([]);
 
   useEffect(() => {
-    // Fetch combined image and product details data
     const data = ImageImporter();
     setImageData(data);
   }, []);
 
   return (
     <Modal
-      title="Refregrator Spare Parts"
+      title="Tools"
       open={open}
       onCancel={handleCancel}
       footer={null}
@@ -29,7 +28,7 @@ const AirComponent = ({ open, handleCancel }) => {
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          gap: '40px',
+          gap: '20px',
           padding: '20px',
         }}
       >
@@ -38,7 +37,8 @@ const AirComponent = ({ open, handleCancel }) => {
             key={index}
             hoverable
             style={{
-              width: 240,
+              width: 'calc(100% / 2 - 20px)', 
+              maxWidth: 240, 
               marginBottom: '16px',
             }}
             cover={<img alt={card.title} src={card.image} style={{ width: '100%' }} />}

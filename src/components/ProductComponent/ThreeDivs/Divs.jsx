@@ -6,7 +6,8 @@ import Air2 from '../../../assets/images/airproducts/air16.png';
 import Air3 from '../../../assets/images/airproducts/air9.png';
 
 const Divs = () => (
-  <div className='flex flex-wrap md:flex-nowrap  !justify-center gap-10 !items-center p-10'>
+ <div className='w-full flex items-center justify-center'>
+   <div className='flex flex-wrap md:flex-nowrap  !justify-center gap-10 !items-center p-10'>
     <Card
     hoverable
     styles={{
@@ -15,7 +16,7 @@ const Divs = () => (
         
       },
     }}
-   className='md:!w-[660px] w-full md:h-[400px] h-full'
+   className='md:!w-[660px] w-[90%] md:h-[400px] h-full'
   >
     <Flex className='h-full items-center flex flex-wrap md:flex-nowrap'>
       
@@ -24,9 +25,10 @@ const Divs = () => (
         style={{
           padding: 12,
         }}
+      
       >
         <h6 className='font-semibold mb-2'>Reliable</h6>
-        <h4 className='font-bold text-[25px] pt-2'>Shop by Category</h4>
+        <h4 className='font-bold text-[30px] pt-2'>Shop by Category</h4>
         <p className=' pt-5 tracking-wider'>Explore our selection of top-quality appliances.</p>
       <div className='pt-5 -ml-1'>
       <Button type='text' icon={<RightOutlined />} iconPosition='end' className='font-semibold text-black '>View</Button>
@@ -35,7 +37,7 @@ const Divs = () => (
       <img
         alt="avatar"
         src={Air1}
-        className='md:w-[320px] w-full ml-15 rounded-e-md'
+        className='md:w-[320px] w-full ml-15 rounded-b-md md:rounded-b-none md:rounded-e-md'
       />
     </Flex>
   </Card>
@@ -108,5 +110,6 @@ const Divs = () => (
     </div>
   </Card>
   </div>
+ </div>
 );
 export default Divs;

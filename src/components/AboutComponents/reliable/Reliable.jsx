@@ -5,10 +5,11 @@ import Buttons from '../../buttons/Buttons';
 
 function Reliable() {
     return (
-        <div className='w-full md:mt-[700px] -mt-32 z-1 flex flex-col md:flex-row gap-3'>
-            <div className='pl-10 w-full md:w-[50%]'>
+        <div className='w-full md:mt-[700px] -mt-32 z-1 flex justify-center items-center'>
+           <div className='flex flex-col md:flex-row gap-3 w-[90%]'>
+           <div className=' w-full md:w-[50%]'>
                 <h6 className='font-semibold mb-2'>Reliable</h6>
-                <h1 className='text-[35px] md:text-[45px] font-bold'>Quality Spare Parts for Long-Lasting Performance</h1>
+                <h1 className='text-[30px] md:text-[45px] font-bold'>Quality Spare Parts for Long-Lasting Performance</h1>
                 <p className='pt-5 tracking-wider text-base md:w-[550px]'>At Diamond Cool, we offer top-tier spare parts that ensure long-lasting performance and durability. Our extensive product range guarantees that you’ll find exactly what you need.</p>
 
                 <div className='flex flex-col md:flex-row gap-5 flex-wrap mt-10'>
@@ -29,9 +30,10 @@ function Reliable() {
                     <Buttons />
                 </div>
             </div>
-            <div className='w-full md:w-[50%] flex justify-center pl-10'>
+            <div className='w-full md:w-[50%] flex justify-center md:pl-10'>
                 <Image src={ExpertisePic} preview={false} className='w-auto' />
             </div>
+           </div>
         </div>
     );
 }

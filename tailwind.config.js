@@ -15,6 +15,7 @@ export default {
       },
       colors:{
         construction:"#9aff81",
+        navcolor:"#74fa1b",
       }
     },
   },
