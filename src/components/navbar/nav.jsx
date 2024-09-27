@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Flex, Button, Input, Image, Drawer, Typography, Divider } from 'antd';
-import { MenuOutlined, SearchOutlined, MailFilled,PhoneFilled,FacebookFilled,TwitterSquareFilled,InstagramFilled,LinkedinFilled } from '@ant-design/icons';
+import { MenuOutlined, SearchOutlined, MailFilled,PhoneFilled,FacebookOutlined,FacebookFilled,TwitterSquareFilled,InstagramFilled,LinkedinFilled } from '@ant-design/icons';
 import { useNavigate } from 'react-router';
 import Learn from '../Common/learn/Learn.jsx';
-import Facebook from '../../assets/images/icons/facebook.png';
-import Insta from '../../assets/images/icons/insta.png';
-import Linkdin from '../../assets/images/icons/linkdin.png';
-import Tweeter from '../../assets/images/icons/tweeter.png';
+
 
 const Nav = () => {
   const [value, setValue] = useState('horizontal');
@@ -36,16 +33,16 @@ const Nav = () => {
 
   return (
     <>
-      <div className={`!w-screen !h-36 bg-navcolor fixed md:!w-full md:top-0 md:left-0 z-40 hidden md:flex transition-transform duration-300 ${scrollingDown ? '-translate-y-full' : 'translate-y-0'}`}>
-        <Flex gap="middle" vertical className="!w-screen overflow-hidden">
-          <Flex vertical={value === 'vertical'} className="!w-full flex items-center justify-between mt-3">
+      <div className={`!w-full !h-36  fixed md:!w-full md:top-0 md:left-0 z-40 hidden md:flex justify-center transition-transform duration-300 ${scrollingDown ? '-translate-y-full' : 'translate-y-0'}`}>
+        <Flex gap="middle" vertical className="!w-[95%] overflow-hidden bg-navcolor">
+          <Flex vertical={value === 'vertical'} className="!w-[95%] flex items-center justify-between mt-3">
             <div className="flex flex-col !w-1/2 items-center justify-center">
-              <Typography className='text-xl font-bold italic text-green-700'>
+              {/* <Typography className='text-xl font-bold italic text-green-700'>
                 Diamond Cool Aircondition Spare Parts Trading LLC
-              </Typography>
+              </Typography> */}
               <Image
                 src="https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982988/MainImages/kntrbdys2pgk0cxzazfq.png"
-                className="md:!w-[350px]"
+                className="md:!w-[450px]"
                 preview={false}
                 onClick={() => navigate('/')}
               />
@@ -54,19 +51,20 @@ const Nav = () => {
               <div className="relative bottom-2 flex gap-28 items-center">
                 <div>
                 <div>
-                  <MailFilled className="text-yellow-500 mr-1" />
-                  <span className='text-yellow-500 italic'>diamondcooluae@gmail.com</span>
+                  <MailFilled className="text-green-700 mr-1" />
+                  <span className='text-white italic'>diamondcooluae@gmail.com</span>
                 </div>
                <div>
-               <PhoneFilled className="text-yellow-500 mr-1  italic" style={{ transform: 'rotate(110deg)' }}/>
-               <span className='text-yellow-500 italic'>+97145773638</span>
+               <PhoneFilled className="text-green-700 mr-1  italic" style={{ transform: 'rotate(110deg)' }}/>
+               <span className='text-white italic'>+971558531096</span>
                </div>
                 </div>
                 <div className='flex gap-3 items-center'>
-                   <FacebookFilled className="text-yellow-500 mr-1  text-[20px] italic" />
-                   <InstagramFilled className="text-yellow-500 mr-1  text-[20px] italic" />
-                   <LinkedinFilled className="text-yellow-500 mr-1  text-[20px] italic" />
-                   <TwitterSquareFilled className="text-yellow-500 mr-1  text-[20px] italic" />
+                   <FacebookFilled  className="text-blue-400 mr-1  text-[25px] italic" />
+                   <InstagramFilled className="text-red-500 mr-1  text-[25px] italic" />
+
+                   <LinkedinFilled className="text-blue-500 mr-1  text-[25px] italic" />
+                   <TwitterSquareFilled className="text-blue-300 mr-1  text-[25px] italic" />
                 </div>
               </div>
               <div className="w-[75%] flex items-center bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg">
@@ -93,26 +91,26 @@ const Nav = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <Flex className={`w-full bg-navcolor md:hidden fixed top-0 left-0 z-40 p-4 justify-between items-center overflow-x-hidden transition-transform duration-300 ${scrollingDown ? '-translate-y-full' : 'translate-y-0'}`}>
+      <Flex className={`w-[90%] bg-navcolor md:hidden fixed self-center z-40 p-4 justify-between items-center overflow-x-hidden transition-transform duration-300 ${scrollingDown ? '-translate-y-full' : 'translate-y-0'}`}>
         
-      <div className="flex flex-col w-full">
-              <Typography className='md:text-xl text-[12px] font-bold italic text-green-700'>
+      <div className="flex flex-col w-[90%]">
+              {/* <Typography className='md:text-xl text-[12px] font-bold italic text-green-700'>
                 Diamond Cool Aircondition Spare Parts Trading LLC
-              </Typography>
+              </Typography> */}
         <Image
           src="https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982988/MainImages/kntrbdys2pgk0cxzazfq.png"
-          className="!w-[210px]"
+          className="!w-[250px]"
           preview={false}
           onClick={() => { navigate('/'); }}
         />
         <div className='w-full flex justify-between'>
-        <div className='w-[60%]'>
-          <MailFilled className="text-yellow-500 mr-1  text-[12px] italic" />
-          <span className='text-yellow-500 text-[12px] italic'>diamondcooluae@gmail.com</span>
+        <div className='w-[60%] ml-5'>
+          <MailFilled className="text-green-700 mr-1  text-[12px] italic" />
+          <span className='text-white text-[12px] italic'>diamondcooluae@gmail.com</span>
           </div>
           <div className='w-[40%]'>
-          <PhoneFilled className="text-yellow-500 mr-1  text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
-          <span className='text-yellow-500 text-[12px] italic'>+97145773638</span>
+          <PhoneFilled className="text-green-600 mr-1  text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
+          <span className='text-white text-[12px] italic'>+971558531096</span>
           </div>
         </div>
         </div>
