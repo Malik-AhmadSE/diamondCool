@@ -9,7 +9,7 @@ function Services() {
   return (
    <div className='w-full flex justify-center items-center'>
      <div className='mt-16 w-full flex md:gap-3'>
-       <div className='w-[100%] h-[550px] pl-5 flex gap-10 flex-wrap'>
+       <div className='w-[95%%] h-[550px] pl-5 flex gap-10 flex-wrap'>
         <div>
             <Image preview={false} width={50} src={Experts} />
             <h4 className='font-bold text-[30px] pt-4 tracking-wide'>Professional Installation</h4>
