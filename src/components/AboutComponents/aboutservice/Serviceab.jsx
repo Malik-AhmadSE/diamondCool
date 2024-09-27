@@ -16,7 +16,7 @@ function Serviceab() {
                     <p className=' md:pt-5 tracking-wider'>In addition to our wide range of products, we also offer professional installation and maintenance services. Our team of experts will ensure that your new appliance is installed correctly and is running smoothly. We also provide regular maintenance to keep your appliances in top condition and extend their lifespan.</p>
                 </div>
             </div>
-            <div className='mt-20 w-full flex gap-3 pb-10  flex-wrap'>
+            <div className='mt-20 w-full flex gap-3 pb-10 flex-wrap'>
                 <div className='w-full h-[550px] flex gap-10 flex-wrap'>
                     <div className='w-full md:w-[30%] flex flex-col items-center'>
                         <Image preview={false} width={50} src={Quality} />
