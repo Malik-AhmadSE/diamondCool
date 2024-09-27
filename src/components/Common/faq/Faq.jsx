@@ -4,7 +4,7 @@ import React from 'react'
 function Faq() {
     const [btn, setbtn] = React.useState("primary");
   return (
-    <div className='flex justify-center items-center mb-10'>
+    <div className='flex justify-center items-center mb-10 mt-10'>
       <div className='w-[95%] flex flex-col'>
         <div className='w-full flex flex-col gap-10'>
         <h1 className='md:w-[550px] font-bold text-[30px] md:text-[45px]'>FAQ's</h1>
