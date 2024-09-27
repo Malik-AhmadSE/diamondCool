@@ -4,7 +4,7 @@ import Buttons from '../../buttons/Buttons';
 
 function Hero() {
     return (
-        <div className='w-full pt-24 md:pt-44 flex justify-center items-center'>
+        <div className='w-full mt-32 md:mt-44 flex justify-center items-center'>
            <div className='w-[90%] z-1 flex gap-3 flex-wrap md:flex-nowrap'>
            <div className=' w-full md:w-[600px]'>
                 <h1 className='font-bold md:text-[45px] text-[30px]'>Find the Perfect Spare Parts for Your Appliances</h1>

@@ -19,7 +19,7 @@ function About() {
       <div className='md:mt-60 pt-10'>
        <Serviceab />
       </div>
-      <div className='md:-mt-72 mt-40'>
+      <div className='md:-mt-72 mt-64'>
         <CeoRating />
       </div>
       <Footer />

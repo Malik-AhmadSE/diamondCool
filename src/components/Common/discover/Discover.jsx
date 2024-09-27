@@ -8,7 +8,7 @@ function Discover() {
     <div className='w-full mt-56 flex justify-center item-center mb-[150px]'>
        <Card 
         hoverable 
-        className='w-[90%] md:w-[80%] h-auto !overflow-hidden !p-0' 
+        className='w-[95%] md:w-[80%] h-auto !overflow-hidden !p-0' 
       >
         <div className='flex flex-col md:flex-row justify-between'>
           <div className='flex flex-col justify-center p-5 md:p-10'>
