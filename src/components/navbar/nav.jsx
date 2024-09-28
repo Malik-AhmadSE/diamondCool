@@ -91,7 +91,7 @@ const Nav = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <Flex className={`w-[90%] bg-navcolor md:hidden fixed self-center z-40 p-4 justify-between items-center overflow-x-hidden transition-transform duration-300 ${scrollingDown ? '-translate-y-full' : 'translate-y-0'}`}>
+      <Flex className={`!w-[90%] bg-navcolor md:hidden self-center z-40 p-4 justify-between items-center overflow-x-hidden transition-transform duration-300 ${scrollingDown ? '-translate-y-full' : 'translate-y-0'}`}>
         
       <div className="flex flex-col w-[90%]">
               {/* <Typography className='md:text-xl text-[12px] font-bold italic text-green-700'>
@@ -104,11 +104,11 @@ const Nav = () => {
           onClick={() => { navigate('/'); }}
         />
         <div className='w-full flex justify-between'>
-        <div className='w-[60%] ml-5'>
+        <div className='w-[70%] ml-5'>
           <MailFilled className="text-green-700 mr-1  text-[12px] italic" />
           <span className='text-white text-[12px] italic'>diamondcooluae@gmail.com</span>
           </div>
-          <div className='w-[40%]'>
+          <div className='w-[50%]'>
           <PhoneFilled className="text-green-600 mr-1  text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
           <span className='text-white text-[12px] italic'>+971558531096</span>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../../components/navbar/nav';
+import Nav from '../../components/navbar/nav.jsx';
 import Hero from '../../components/AboutComponents/hero/Hero.jsx';
 import ImageComponent from '../../components/AboutComponents/image/Image.jsx';
 import Footer from '../../components/footer/Footer';
@@ -11,7 +11,7 @@ function About() {
 
   return (
     <div className='flex flex-col justify-center'>
-      <Navbar />
+      <Nav />
       <Hero />
       <ImageComponent />
       <Reliable />
