@@ -92,9 +92,9 @@ const Nav = () => {
 
       {/* Mobile Navbar */}
       <div className='w-full flex items-center justify-center'>
-      <Flex className={`!w-[95%] bg-navcolor md:hidden self-center z-40 p-4  justify-between items-center overflow-x-hidden transition-transform duration-300 ${scrollingDown ? '-translate-y-full' : 'translate-y-0'}`}>
+      <Flex className={`!w-[98%] bg-navcolor md:hidden self-center z-40 p-4  justify-between items-center overflow-x-hidden transition-transform duration-300 ${scrollingDown ? '-translate-y-full' : 'translate-y-0'}`}>
         
-        <div className="flex flex-col w-[95%]">
+        <div className="flex flex-col w-[98%]">
                 {/* <Typography className='md:text-xl text-[12px] font-bold italic text-green-700'>
                   Diamond Cool Aircondition Spare Parts Trading LLC
                 </Typography> */}
