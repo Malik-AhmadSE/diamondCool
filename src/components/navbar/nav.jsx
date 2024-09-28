@@ -100,17 +100,17 @@ const Nav = () => {
                 </Typography> */}
           <Image
             src="https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982988/MainImages/kntrbdys2pgk0cxzazfq.png"
-            className="!w-[250px]"
+            className="!w-[250px] -ml-5"
             preview={false}
             onClick={() => { navigate('/'); }}
           />
           <div className='w-full flex justify-between'>
-          <div className='w-[70%] ml-5'>
+          <div className='w-[70%]'>
             <MailFilled className="text-green-700 mr-1  text-[12px] italic" />
             <span className='text-white text-[12px] italic'>diamondcooluae@gmail.com</span>
             </div>
             <div className='w-[50%]'>
-            <PhoneFilled className="text-green-600 mr-1  text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
+            <PhoneFilled className="text-green-600 mr-1 ml-5 text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
             <span className='text-white text-[12px] italic'>+971558531096</span>
             </div>
           </div>
