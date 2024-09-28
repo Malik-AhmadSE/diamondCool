@@ -104,7 +104,7 @@ const Nav = () => {
             preview={false}
             onClick={() => { navigate('/'); }}
           />
-          <div className='w-full flex justify-between gap-8'>
+          <div className='w-full flex justify-between gap-6'>
           <div className='flex gap-1 '>
             <MailFilled className="text-green-700 text-[12px] italic" />
             <span className='text-white text-[12px] italic'>diamondcooluae@gmail.com</span>
