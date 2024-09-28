@@ -104,13 +104,13 @@ const Nav = () => {
             preview={false}
             onClick={() => { navigate('/'); }}
           />
-          <div className='w-full flex justify-between'>
-          <div className='w-[70%]'>
+          <div className='w-full flex justify-between gap-12'>
+          <div >
             <MailFilled className="text-green-700 mr-1  text-[12px] italic" />
             <span className='text-white text-[12px] italic'>diamondcooluae@gmail.com</span>
             </div>
-            <div className='w-[50%]'>
-            <PhoneFilled className="text-green-600 mr-1 ml-5 text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
+            <div className=''>
+            <PhoneFilled className="text-green-600 mr-1 text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
             <span className='text-white text-[12px] italic'>+971558531096</span>
             </div>
           </div>
