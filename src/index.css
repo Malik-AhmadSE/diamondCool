@@ -7,3 +7,16 @@ body{
     margin: 0% !important;
     padding: 0% !important;
 }
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-25%); /* Change to -50% for seamless effect */
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 10s linear infinite; /* Adjust duration as needed */
+}

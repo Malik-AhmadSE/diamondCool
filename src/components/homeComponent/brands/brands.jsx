@@ -3,7 +3,8 @@ import { Flex, Typography, Image, Grid } from 'antd';
 
 function Brands() {
   return (
-    <div className="!w-screen flex-col items-center justify-center">
+    <div className="!w-screen flex-col items-center justify-center mb-7">
+      
       <Typography.Title className='text-[45px] font-bold text-center pt-10'>
         Brands
       </Typography.Title>
@@ -21,6 +22,14 @@ function Brands() {
           preview={false}
         />
       </Flex>
+      <div className="overflow-hidden">
+      <div className="whitespace-nowrap animate-marquee md:text-xl text-[12px] font-bold italic text-green-700" >
+        <span className="mx-4">Diamond Cool Aircondition Spare Parts Trading LLC</span>
+        <span className="mx-4">Diamond Cool Aircondition Spare Parts Trading LLC</span>
+        <span className="mx-4">Diamond Cool Aircondition Spare Parts Trading LLC</span>
+        <span className="mx-4">Diamond Cool Aircondition Spare Parts Trading LLC</span>
+      </div>
+    </div>
     </div>
   );
 }
