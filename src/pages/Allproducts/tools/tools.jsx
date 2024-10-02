@@ -1,8 +1,7 @@
-// AirComponent.js
 import React, { useState, useEffect } from 'react';
 import { Card, Modal } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
-import { ImageImporter } from './ImageImporter/ImageImporter.jsx'; // Import the ImageImporter component
+import { ImageImporter } from './ImageImporter/ImageImporter.jsx';
 
 const { Meta } = Card;
 

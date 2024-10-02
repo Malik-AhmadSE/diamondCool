@@ -19,8 +19,8 @@ function Footer() {
             </address>
             <address className='pt-5 md:pt-10'>
               <h6 className='font-medium'>Contact:</h6>
-              <p>+97145773638</p>
-              <p>diamondcooluae@gmail.com</p>
+              <p>Tel: +97145773638</p>
+              <p>Mail:diamondcooluae@gmail.com</p>
             </address>
             <div className='flex flex-row gap-3 items-center pt-5 md:pt-10'>
               <Image width={30} src={Facebook} preview={false}/>
@@ -32,15 +32,15 @@ function Footer() {
         </div>
         <div className='w-full md:w-[30%] flex flex-col md:flex-row gap-5 md:gap-10'>
           <div className='flex flex-col gap-3 text-center md:text-left'>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
-            <a href="#">Products</a>
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact</a>
+            <a href="/product">Products</a>
           </div>
           <div className='flex flex-col gap-3 text-center md:text-left'>
-            <a href="#">Washing Machine</a>
-            <a href="#">Refrigerators</a>
-            <a href="#">Air Conditioners</a>
+            <a href="/product">Washing Machine</a>
+            <a href="/product">Refrigerators</a>
+            <a href="/product">Air Conditioners</a>
           </div>
         </div>
       </div>

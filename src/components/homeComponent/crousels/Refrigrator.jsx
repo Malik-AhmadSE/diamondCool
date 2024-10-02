@@ -1,9 +1,8 @@
 import React from 'react';
 import { Carousel } from 'antd';
-import Pic from '../../../assets/images/pic.jpg';
 // URLs or paths to your images
 const imageUrls = [
-  'https://res.cloudinary.com/dvf9mmcww/image/upload/v1727240852/9_ng6jkh.jpg',
+  'https://res.cloudinary.com/dvf9mmcww/image/upload/v1727839273/ref_ookvdn.jpg',
   'https://res.cloudinary.com/dvf9mmcww/image/upload/v1727240977/14_wgo0sr.jpg',
   'https://res.cloudinary.com/dvf9mmcww/image/upload/v1727240976/15_e7n7cg.jpg',
   'https://res.cloudinary.com/dvf9mmcww/image/upload/v1727240976/13_uqoejs.jpg'

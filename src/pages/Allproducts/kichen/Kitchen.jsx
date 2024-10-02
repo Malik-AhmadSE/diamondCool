@@ -60,7 +60,7 @@ const KichenComponent = ({ open, handleCancel }) => {
             >
               <Skeleton.Image className='!w-[100%] pb-5' />
               <Skeleton active title={true} className='pb-2' />
-              <Skeleton active paragraph={{ rows: 2 }} />
+              
             </Card>
           ))
         ) : (
@@ -75,7 +75,7 @@ const KichenComponent = ({ open, handleCancel }) => {
               }}
               cover={<img alt={card.title} src={card.image} style={{ width: '100%' }} />}
             >
-              <Meta title={card.title} description={card.description} />
+              <Meta title={card.title}  />
             </Card>
           ))
         )}

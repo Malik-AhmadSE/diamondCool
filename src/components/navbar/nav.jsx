@@ -98,13 +98,7 @@ const Nav = () => {
                 {/* <Typography className='md:text-xl text-[12px] font-bold italic text-green-700'>
                   Diamond Cool Aircondition Spare Parts Trading LLC
                 </Typography> */}
-          <Image
-            src="https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982988/MainImages/kntrbdys2pgk0cxzazfq.png"
-            className="!w-[250px] -ml-5"
-            preview={false}
-            onClick={() => { navigate('/'); }}
-          />
-          <div className='w-full flex justify-between gap-6'>
+           <div className='w-full flex justify-between gap-6'>
           <div className='flex gap-1 '>
             <MailFilled className="text-green-700 text-[12px] italic" />
             <span className='text-white text-[12px] italic'>diamondcooluae@gmail.com</span>
@@ -113,7 +107,14 @@ const Nav = () => {
             <PhoneFilled className="text-green-600 mr-1 text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
             <span className='text-white text-[12px] italic'>+971558531096</span>
             </div>
-          </div>
+          </div>      
+          <Image
+            src="https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982988/MainImages/kntrbdys2pgk0cxzazfq.png"
+            className="!w-[250px] -ml-5"
+            preview={false}
+            onClick={() => { navigate('/'); }}
+          />
+         
           </div>
           <MenuOutlined onClick={() => setDrawerVisible(true)} className="text-xl cursor-pointer" />
         </Flex>
