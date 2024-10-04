@@ -4,7 +4,7 @@ import Home from './pages/home/home.jsx';
 import Contact from './pages/contact/Contact.jsx';
 import Products from './pages/products/Products.jsx';
 import Construct from './pages/underConstruction/Construct.jsx';
-import Expert from '../public/icon.jpg';
+import Expert from './assets/images/logofooter.jpg';
 import About from './pages/about/About.jsx';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 

@@ -33,10 +33,10 @@ const cardDatakic = [
       { id: 4, title: "Heaters Big", description: "", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726652081/kitchen/cfat5sxdqprhyyrlv6e0.jpg' },
     ];
 const cardDatatool = [
-        { id: 1, title: "Product 1", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726676561/tools/nyhb5f93wrhqydzhjonl.jpg' },
-        { id: 2, title: "Product 2", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726676562/tools/mquveca7wemf90kgfll5.jpg' },
-        { id: 3, title: "Product 3", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726676563/tools/an7b04hutdtim4dfiwto.jpg' },
-        { id: 4, title: "Product 4", description: "www.instagram.com", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726676562/tools/atynyeqasuef9auauxl4.jpg' },
+        { id: 1, title: "Stands", description: "", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726676561/tools/nyhb5f93wrhqydzhjonl.jpg' },
+        { id: 2, title: "Flaring Accessories", description: "", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726676562/tools/mquveca7wemf90kgfll5.jpg' },
+        { id: 3, title: "Tool Box", description: "", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726676563/tools/an7b04hutdtim4dfiwto.jpg' },
+        { id: 4, title: "Big Flaring Tool Box", description: "", imgSrc: 'https://res.cloudinary.com/dvf9mmcww/image/upload/v1726676562/tools/atynyeqasuef9auauxl4.jpg' },
       ];
 
 

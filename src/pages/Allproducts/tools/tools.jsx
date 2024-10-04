@@ -42,7 +42,7 @@ const AirComponent = ({ open, handleCancel }) => {
             }}
             cover={<img alt={card.title} src={card.image} style={{ width: '100%' }} />}
           >
-            <Meta title={card.title} description={card.description} />
+            <Meta title={card.title} />
           </Card>
         ))}
       </div>
