@@ -3,7 +3,7 @@ import Buttons from '../../buttons/Buttons';
 
 function Quality() { 
     return (
-        <div className='w-full md:mt-60 -mt-16 z-1'>
+        <div className='w-full md:mt-60 -mt-20 z-1'>
         <div className='w-[90%] flex flex-col md:flex-row gap-3 '> {/* Change flex direction based on screen size */}
             <div className=''>
                 <h1 className='text-[30px] md:text-[45px] font-bold'> {/* Responsive font size */}
