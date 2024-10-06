@@ -16,7 +16,7 @@ const Divs = () => (
         
       },
     }}
-   className='md:!w-[660px] w-[90%] md:h-[400px] h-full'
+   className='md:!w-[660px] w-[100%] md:h-[400px] h-full'
   >
     <Flex className='h-full items-center flex flex-wrap md:flex-nowrap'>
       
@@ -43,9 +43,7 @@ const Divs = () => (
   </Card>
   <Card
     hoverable
-    style={{
-      width: 250,
-    }}
+    className='md:w-[250px] w-full'
     styles={{
       body: {
         padding:0,
@@ -77,9 +75,7 @@ const Divs = () => (
   </Card>
   <Card
     hoverable
-    style={{
-      width: 250,
-    }}
+    className='md:w-[250px] w-full'
     styles={{
       body: {
         padding:0,
