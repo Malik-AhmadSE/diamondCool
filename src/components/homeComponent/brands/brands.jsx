@@ -21,7 +21,7 @@ function Brands() {
     <div className="flex flex-row items-center gap-10">
       <Tooltip title="Buy from noon">
         <a href='https://www.noon.com/seller/p-149548/?offer_code=ze536cca4ff792a1163e9z-1&sku=ZE536CCA4FF792A1163E9Z'>
-          <Image alt='img' src={Pic} preview={false} className='md:!w-[250px] mt-1 !w-[120px]' />
+          <Image alt='img' src={Pic} preview={false} className='md:!w-[250px] mt-1 !w-[150px]' />
         </a>
       </Tooltip>
       
