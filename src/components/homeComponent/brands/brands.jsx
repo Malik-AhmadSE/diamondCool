@@ -13,8 +13,8 @@ function Brands() {
   return (
     <div className="!w-screen flex-col items-center justify-center mb-7">
       <Flex className='w-[90%] md:w-full flex bg-logo bg-cover justify-center items-center md:gap-52 gap-14 '>
-      <Tooltip title="Buy from noon" ><a href='https://www.noon.com/seller/p-149548/?offer_code=ze536cca4ff792a1163e9z-1&sku=ZE536CCA4FF792A1163E9Z'><Image alt='img' src={Pic} preview={false} className='md:!w-[250px] mt-1 !w-[200px]' /> </a></Tooltip>
-        <Tooltip title="Buy from Amazon" ><a href='https://www.amazon.ae/s?me=A1RG19Q6S3VY4C&marketplaceID=A2VIGQ35RCS4UG'> <AmazonSquareFilled  className='md:text-[110px] text-[90px] text-col'/></a></Tooltip>
+      <Tooltip title="Buy from noon" ><a href='https://www.noon.com/seller/p-149548/?offer_code=ze536cca4ff792a1163e9z-1&sku=ZE536CCA4FF792A1163E9Z'><Image alt='img' src={Pic} preview={false} className='md:!w-[250px] mt-1 !w-[120px]' /> </a></Tooltip>
+        <Tooltip title="Buy from Amazon" ><a href='https://www.amazon.ae/s?me=A1RG19Q6S3VY4C&marketplaceID=A2VIGQ35RCS4UG'> <AmazonSquareFilled  className='md:text-[110px] text-[50px] text-col'/></a></Tooltip>
       </Flex>
       <Typography.Title className='text-[45px] font-bold text-center pt-10'>
         Brands
