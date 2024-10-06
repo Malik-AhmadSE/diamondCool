@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Flex, Button, Input, Image, Drawer, Typography, Divider } from 'antd';
-import { MenuOutlined, SearchOutlined, MailFilled, PhoneFilled, FacebookOutlined, FacebookFilled, TwitterSquareFilled, InstagramFilled, LinkedinFilled } from '@ant-design/icons';
+import { Flex, Button, Input, Image, Drawer, Divider } from 'antd';
+import { MenuOutlined, SearchOutlined, MailFilled, PhoneFilled} from '@ant-design/icons';
 import { useNavigate } from 'react-router';
 import Learn from '../Common/learn/Learn.jsx';
 
@@ -51,12 +51,12 @@ const Nav = () => {
               <div className="relative bottom-2 flex gap-28 items-center">
                 <div>
                   <div>
-                    <MailFilled className="text-green-700 mr-1" />
-                    <span className='text-white italic'>diamondcooluae@gmail.com</span>
+                    <MailFilled className="text-blue-500 mr-1" />
+                    <span className='text-blue-500 italic'>diamondcooluae@gmail.com</span>
                   </div>
                   <div>
-                    <PhoneFilled className="text-green-700 mr-1  italic" style={{ transform: 'rotate(110deg)' }} />
-                    <span className='text-white italic'>+971558531096</span>
+                    <PhoneFilled className="text-blue-500 mr-1  italic" style={{ transform: 'rotate(110deg)' }} />
+                    <span className='text-blue-500 italic'>+971558531096</span>
                   </div>
                 </div>
                 <div className='flex gap-3 items-center'>
@@ -119,12 +119,12 @@ const Nav = () => {
                 </Typography> */}
             <div className='w-full flex justify-between gap-6 '>
               <div className='flex gap-1 '>
-                <MailFilled className="text-green-700 text-[12px] italic" />
-                <span className=' text-[12px] italic'>diamondcooluae@gmail.com</span>
+                <MailFilled className="text-blue-500 text-[12px] italic" />
+                <span className=' text-[12px] italic text-blue-500'>diamondcooluae@gmail.com</span>
               </div>
               <div className='flex gap-1 mr-2'>
-                <PhoneFilled className="text-green-600 mr-1 text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
-                <span className=' text-[12px] italic '>+971558531096</span>
+                <PhoneFilled className="text-blue-500 mr-1 text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
+                <span className=' text-[12px] italic text-blue-500 '>+971558531096</span>
               </div>
             </div>
             <Image
