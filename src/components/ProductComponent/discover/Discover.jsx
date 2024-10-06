@@ -6,7 +6,7 @@ import Buttons from '../../buttons/Buttons';
 function Quality() {
     return (
        <div className='w-full flex justify-center items-center'>
-         <div className='w-[95%] z-1 flex flex-col md:flex-row gap-3 md:p-5'>
+         <div className='w-[98%] z-1 flex flex-col md:flex-row gap-3 md:p-5'>
             <div className='flex-1'>
                 <h1 className='text-[30px] md:text-[45px] font-bold'>
                     Discover Our Additional Services for Installation and Maintenance
