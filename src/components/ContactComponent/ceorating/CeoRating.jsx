@@ -1,6 +1,6 @@
 import { Avatar, Rate, Typography } from 'antd';
 import React from 'react';
-import Icon from '../../../../public/icon.jpg';
+import Icon from '../../../../public/logofooter.jpg';
 function CeoRating() {
     return (
         <div className=' flex flex-col justify-center items-center text-center'>

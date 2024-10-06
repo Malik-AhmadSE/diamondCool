@@ -3,7 +3,6 @@ import Navbar from '../../components/navbar/nav';
 import Hero from '../../components/ContactComponent/hero/Hero.jsx';
 import Footer from '../../components/footer/Footer';
 import ContactInfo from '../../components/ContactComponent/contactinfo/ContactInfo.jsx';
-import Form from '../../components/ContactComponent/contactinfo/Form.jsx';
 import ContactDiv from '../../components/ContactComponent/contactinfo/ContactDiv.jsx';
 import Location from '../../components/ContactComponent/location/Location.jsx';
 import Faq from '../../components/Common/faq/Faq.jsx';
@@ -16,7 +15,6 @@ function Contact() {
       <Navbar />
       <Hero />
       <ContactInfo />
-      <Form />
       <div className='md:mt-36 mt-28 pt-10'>
       <ContactDiv />
       </div>

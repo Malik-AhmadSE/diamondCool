@@ -15,7 +15,7 @@ function Hero() {
       {loading ? (
         <Skeleton.Image className='!w-full mt-8 md:mt-24 z-0 !h-[200px] md:!h-[360px] bg-cover flex flex-col justify-center items-center mb-28' />
       ) : (
-        <Image src={'https://res.cloudinary.com/dvf9mmcww/image/upload/v1727241513/poster_hljucd.jpg'} preview={false} className='!w-full mt-10 md:mt-44 z-0 h-[400px] md:h-[950px]flex flex-col justify-center items-center px-4' />
+        <Image src={'https://res.cloudinary.com/dvf9mmcww/image/upload/v1728178665/22_vmd5cw.png'} preview={false} className='!w-full mt-10 md:mt-44 z-0 h-[400px] md:h-[950px]flex flex-col justify-center items-center px-4' />
       )}
     </>
   );

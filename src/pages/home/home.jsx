@@ -15,6 +15,7 @@ import AirCond from '../../components/homeComponent/crousels/Aircond.jsx';
 import Washing from '../../components/homeComponent/crousels/Washing.jsx';
 import Kitchen from '../../components/homeComponent/crousels/kitchen.jsx';
 import Tool from '../../components/homeComponent/crousels/tools.jsx';
+import Form from '../../components/homeComponent/contact/Form.jsx';
 function Home() {
 
   return (
@@ -29,6 +30,7 @@ function Home() {
         <Kitchen />
         <Tool />
       </div>
+      <Form />
       {/* <Expertise/>
       <Reliable />
       <Cards />
