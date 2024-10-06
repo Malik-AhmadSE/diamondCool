@@ -117,10 +117,10 @@ const Nav = () => {
             {/* <Typography className='md:text-xl text-[12px] font-bold italic text-green-700'>
                   Diamond Cool Aircondition Spare Parts Trading LLC
                 </Typography> */}
-            <div className='w-full flex justify-between gap-6 pr-2'>
+            <div className='w-full flex justify-between gap-6 '>
               <div className='flex gap-1 '>
                 <MailFilled className="text-green-700 text-[12px] italic" />
-                <span className=' text-[12px] italic'>diamondcooluae@gmail.com</span>
+                <span className=' text-[12px] italic pr-2'>diamondcooluae@gmail.com</span>
               </div>
               <div className='flex gap-1'>
                 <PhoneFilled className="text-green-600 mr-1 text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
@@ -135,7 +135,7 @@ const Nav = () => {
             />
 
           </div>
-          <MenuOutlined onClick={() => setDrawerVisible(true)} className="text-xl cursor-pointer" />
+          <MenuOutlined onClick={() => setDrawerVisible(true)} className="text-xl cursor-pointer pr-2" />
         </Flex>
 
         {/* Drawer for mobile menu */}
