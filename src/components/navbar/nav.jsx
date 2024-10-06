@@ -120,11 +120,11 @@ const Nav = () => {
             <div className='w-full flex justify-between gap-6 '>
               <div className='flex gap-1 '>
                 <MailFilled className="text-green-700 text-[12px] italic" />
-                <span className=' text-[12px] italic pr-2'>diamondcooluae@gmail.com</span>
+                <span className=' text-[12px] italic'>diamondcooluae@gmail.com</span>
               </div>
-              <div className='flex gap-1'>
+              <div className='flex gap-1 mr-2'>
                 <PhoneFilled className="text-green-600 mr-1 text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
-                <span className=' text-[12px] italic'>+971558531096</span>
+                <span className=' text-[12px] italic '>+971558531096</span>
               </div>
             </div>
             <Image
@@ -135,7 +135,7 @@ const Nav = () => {
             />
 
           </div>
-          <MenuOutlined onClick={() => setDrawerVisible(true)} className="text-xl cursor-pointer pr-2" />
+          <MenuOutlined onClick={() => setDrawerVisible(true)} className="text-xl cursor-pointer mr-2" />
         </Flex>
 
         {/* Drawer for mobile menu */}
