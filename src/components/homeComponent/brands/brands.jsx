@@ -15,7 +15,7 @@ function Brands() {
       <div className='flex justify-center items-center'>
   <Flex className='md:!w-[97.5%] !w-[93%] h-full flex bg-logo bg-cover justify-center items-center gap-10'>
     <div className="flex !h-full justify-start !items-center relative top-2 mb-4 w-full">
-      <span className=" text-sm md:text-[45px] text-white px-4 ">Visit our online stores</span>
+      <span className=" text-sm md:text-[45px] text-white px-10 ">Visit our online stores</span>
     </div>
     
     <div className="flex flex-row items-center gap-10">
@@ -27,17 +27,12 @@ function Brands() {
       
       <Tooltip title="Buy from Amazon">
         <a href='https://www.amazon.ae/s?me=A1RG19Q6S3VY4C&marketplaceID=A2VIGQ35RCS4UG'>
-          <AmazonSquareFilled className='md:text-[70px] text-[20px] mr-4 text-col' />
+          <AmazonSquareFilled className='md:text-[70px] text-[25px] mr-4 text-col' />
         </a>
       </Tooltip>
     </div>
   </Flex>
 </div>
-
-
-      <Typography.Title className='text-[45px] font-bold text-center pt-10'>
-        Brands
-      </Typography.Title>
 
       <Carousel autoplay speed={200} className="w-screen" >
         {imageUrls.map((url, index) => (
@@ -52,7 +47,7 @@ function Brands() {
         ))}
       </Carousel>
       <div className="overflow-hidden">
-        <div className="whitespace-nowrap animate-marquee md:text-xl text-[12px] font-bold italic text-green-700" >
+        <div className=" whitespace-nowrap animate-marquee md:text-xl text-[12px] font-bold italic text-green-700" >
           <span className="mx-4">Diamond Cool Aircondition Spare Parts Trading LLC</span>
           <span className="mx-4">Diamond Cool Aircondition Spare Parts Trading LLC</span>
           <span className="mx-4">Diamond Cool Aircondition Spare Parts Trading LLC</span>

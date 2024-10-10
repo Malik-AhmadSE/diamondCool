@@ -33,7 +33,7 @@ const Nav = () => {
 
   return (
     <>
-      <div className={`!w-full !h-36  fixed md:!w-full md:top-0 md:left-0 z-40 hidden md:flex justify-center transition-transform duration-300 ${scrollingDown ? '-translate-y-full' : 'translate-y-0'}`}>
+      <div className={`!w-full !h-36  fixed md:!w-full md:top-0 md:left-0 z-40 hidden md:flex justify-center `}>
         <Flex gap="middle" vertical className="!w-[95%] overflow-hidden bg-Nav bg-cover">
           <Flex vertical={value === 'vertical'} className="!w-[95%] flex items-center justify-between mt-3">
             <div className="flex flex-col !w-1/2 items-center justify-center">
@@ -110,77 +110,72 @@ const Nav = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <div className='w-full flex items-center justify-center'>
-        <Flex className={`!w-[98%] bg-Nav md:hidden self-center z-40 p-4  justify-between items-center overflow-x-hidden transition-transform duration-300 ${scrollingDown ? '-translate-y-full' : 'translate-y-0'}`}>
+      <div className='!w-full fixed z-50 flex items-center justify-center top-0 left-0'>
+  <Flex className={`!w-[95%] bg-Nav md:hidden self-center z-40 p-4 justify-between items-center overflow-x-hidden`}>
+    <div className="flex flex-col w-[98%]">
+      <Image
+        src="https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982988/MainImages/kntrbdys2pgk0cxzazfq.png"
+        className="!w-[250px] -ml-5"
+        preview={false}
+        onClick={() => { navigate('/'); }}
+      />
+      <div className='w-full flex justify-between gap-6'>
+        <div className='flex gap-1'>
+          <MailFilled className="text-blue-500 text-[12px] italic" />
+          <span className='text-[12px] italic text-blue-500'>diamondcooluae@gmail.com</span>
+        </div>
+        <div className='flex gap-1 mr-2'>
+          <PhoneFilled className="text-blue-500 mr-1 text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
+          <span className='text-[12px] italic text-blue-500'>+971558531096</span>
+        </div>
+      </div>
+    </div>
+    <MenuOutlined onClick={() => setDrawerVisible(true)} className="text-xl cursor-pointer mr-2" />
+  </Flex>
 
-          <div className="flex flex-col w-[98%]">
-            {/* <Typography className='md:text-xl text-[12px] font-bold italic text-green-700'>
-                  Diamond Cool Aircondition Spare Parts Trading LLC
-                </Typography> */}
-            <div className='w-full flex justify-between gap-6 '>
-              <div className='flex gap-1 '>
-                <MailFilled className="text-blue-500 text-[12px] italic" />
-                <span className=' text-[12px] italic text-blue-500'>diamondcooluae@gmail.com</span>
-              </div>
-              <div className='flex gap-1 mr-2'>
-                <PhoneFilled className="text-blue-500 mr-1 text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
-                <span className=' text-[12px] italic text-blue-500 '>+971558531096</span>
-              </div>
-            </div>
-            <Image
-              src="https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982988/MainImages/kntrbdys2pgk0cxzazfq.png"
-              className="!w-[250px] -ml-5"
-              preview={false}
-              onClick={() => { navigate('/'); }}
-            />
+  <Drawer
+    title="Menu"
+    placement="right"
+    onClose={() => setDrawerVisible(false)}
+    visible={drawerVisible}
+    className="md:hidden p-5"
+  >
+    <Flex className='flex-col'>
+      <div className="w-[100%] flex items-center bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg mb-5">
+        <Input
+          value={searchValue}
+          onChange={(e) => setSearchValue(e.target.value)}
+          placeholder="Search..."
+          className="border-none p-2 flex-grow"
+        />
+        <Button type="primary" icon={<SearchOutlined />} onClick={handleSearch} className="mr-1" />
+      </div>
+      <Button type="text" onClick={() => { navigate('/'); setDrawerVisible(false); }} className="w-full text-left mb-5">
+        Home
+      </Button>
+      <Button type="text" onClick={() => { navigate('/about'); setDrawerVisible(false); }} className="w-full text-left mb-5">
+        About Us
+      </Button>
+      <Button type="text" onClick={() => { navigate('/product'); setDrawerVisible(false); }} className="w-full text-left mb-5">
+        Products
+      </Button>
+      <Button type="text" onClick={() => { navigate('/contact'); setDrawerVisible(false); }} className="w-full text-left mb-5">
+        Contact
+      </Button>
 
-          </div>
-          <MenuOutlined onClick={() => setDrawerVisible(true)} className="text-xl cursor-pointer mr-2" />
-        </Flex>
+      <Button
+        type={btn}
+        onMouseEnter={() => setBtn('Default')}
+        className="w-full text-white bg-black hover:bg-transparent mb-5 hover:border hover:border-green-700 hover:text-green-700"
+        onClick={() => setOpen(true)}
+      >
+        Learn More
+      </Button>
+    </Flex>
+    <Learn open={open} handleCancel={() => setOpen(false)} />
+  </Drawer>
+</div>
 
-        {/* Drawer for mobile menu */}
-        <Drawer
-          title="Menu"
-          placement="right"
-          onClose={() => setDrawerVisible(false)}
-          visible={drawerVisible}
-          className="md:hidden p-5"
-        >
-          <Flex className='flex-col'>
-            <div className="w-[100%] flex items-center bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg mb-5">
-              <Input
-                value={searchValue}
-                onChange={(e) => setSearchValue(e.target.value)}
-                placeholder="Search..."
-                className="border-none p-2 flex-grow"
-              />
-              <Button type="primary" icon={<SearchOutlined />} onClick={handleSearch} className=" mr-1" />
-            </div>
-            <Button type="text" onClick={() => { navigate('/'); setDrawerVisible(false); }} className="w-full text-left mb-5">
-              Home
-            </Button>
-            <Button type="text" onClick={() => { navigate('/about'); setDrawerVisible(false); }} className="w-full text-left mb-5">
-              About Us
-            </Button>
-            <Button type="text" onClick={() => { navigate('/product'); setDrawerVisible(false); }} className="w-full text-left mb-5">
-              Products
-            </Button>
-            <Button type="text" onClick={() => { navigate('/contact'); setDrawerVisible(false); }} className="w-full text-left mb-5">
-              Contact
-            </Button>
-
-            <Button
-              type={btn}
-              onMouseEnter={() => setBtn('Default')}
-              className="w-full text-white bg-black hover:bg-transparent mb-5 hover:border hover:border-green-700 hover:text-green-700"
-              onClick={() => setOpen(true)}
-            >
-              Learn More
-            </Button>
-          </Flex>
-          <Learn open={open} handleCancel={() => setOpen(false)} />
-        </Drawer>
-      </div>
     </>
   );
 };
