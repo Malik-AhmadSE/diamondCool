@@ -30,7 +30,7 @@ const AirComponent = ({ open, handleCancel }) => {
 
   return (
     <Modal
-      title="Air Conditioners Spare Parts"
+      title="Air Condition Spare Parts"
       open={open}
       onCancel={handleCancel}
       footer={null}

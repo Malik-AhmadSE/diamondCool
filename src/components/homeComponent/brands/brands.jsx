@@ -15,7 +15,7 @@ function Brands() {
       <div className='flex justify-center items-center'>
   <Flex className='md:!w-[97.5%] !w-[93%] h-full flex bg-logo bg-cover justify-center items-center gap-10'>
     <div className="flex !h-full justify-start !items-center relative top-2 mb-4 w-full">
-      <span className=" text-sm md:text-[45px] text-white px-10 ">Visit our online stores</span>
+      <span className=" text-sm md:text-[45px] text-white px-10 ">Visit Our Online Stores</span>
     </div>
     
     <div className="flex flex-row items-center gap-10">
@@ -34,9 +34,9 @@ function Brands() {
   </Flex>
 </div>
 
-      <Carousel autoplay speed={200} className="w-screen" >
+      <Carousel autoplay speed={200} className="w-screen pl-[14px] pr-[10px]" >
         {imageUrls.map((url, index) => (
-          <div key={index} className="md:h-56 flex items-center justify-center">
+          <div key={index} className="w-full md:h-56 flex items-center justify-center">
             <img
               src={url}
               alt={`Image ${index + 1}`}
@@ -46,14 +46,18 @@ function Brands() {
           </div>
         ))}
       </Carousel>
-      <div className="overflow-hidden">
-        <div className=" whitespace-nowrap animate-marquee md:text-xl text-[12px] font-bold italic text-green-700" >
-          <span className="mx-4">Diamond Cool Aircondition Spare Parts Trading LLC</span>
-          <span className="mx-4">Diamond Cool Aircondition Spare Parts Trading LLC</span>
-          <span className="mx-4">Diamond Cool Aircondition Spare Parts Trading LLC</span>
-          <span className="mx-4">Diamond Cool Aircondition Spare Parts Trading LLC</span>
-        </div>
-      </div>
+  <div className='w-full pl-4 pr-4'>
+  <div className="overflow-hidden">
+  <div className=" whitespace-nowrap animate-marquee text-xl font-bold italic text-green-700">
+    <span className="mx-2">Diamond Cool Aircondition Spare Parts Trading LLC</span>
+    <span className="mx-2">Diamond Cool Aircondition Spare Parts Trading LLC</span>
+    <span className="mx-2">Diamond Cool Aircondition Spare Parts Trading LLC</span>
+    <span className="mx-2">Diamond Cool Aircondition Spare Parts Trading LLC</span>
+  </div>
+</div>
+  </div>
+
+
     </div>
   );
 }

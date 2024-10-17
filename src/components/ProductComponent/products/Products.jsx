@@ -67,14 +67,14 @@ const showtoolModal = () => setOpentool(true);
         <h6 className='font-semibold mb-2'>Categories</h6>
         <h1 className='md:w-[550px] font-bold md:text-[45px] text-[30px]'>Products</h1>
         <p className='md:w-[550px] pt-5 tracking-wider'>
-          We offer High Quality Spare Parts for air Conditioners, Refrigerators, and washing machines.
+          We offer High Quality Spare Parts for air Condition, Refrigerators, and washing machines.
         </p>
       </div>
 
       {/* Air Conditioners Section */}
       <div>
         <div className='flex justify-between items-center md:pr-10 pt-5'>
-          <h1 className='md:w-[550px] font-bold text-[30px] md:text-[45px]'>Air Conditioners</h1>
+          <h1 className='md:w-[550px] font-bold text-[30px] md:text-[45px]'>Air Condition</h1>
           <Button type='link' iconPosition='end' icon={<RightOutlined />} className='font-semibold text-black -ml-4' onClick={showAirModal}>View More</Button>
           <AirComponent open={openAir} handleCancel={handleAirCancel} />
         </div>

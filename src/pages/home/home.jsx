@@ -30,7 +30,9 @@ function Home() {
         <Kitchen />
         <Tool />
       </div>
-      <Form />
+     <div className='pl-4 pr-4'>
+     <Form />
+     </div>
       {/* <Expertise/>
       <Reliable />
       <Cards />

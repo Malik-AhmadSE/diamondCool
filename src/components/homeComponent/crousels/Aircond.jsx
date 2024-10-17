@@ -13,7 +13,7 @@ const imageUrls = [
 function AirCond() {
   return (
     <div className="p-4 text-center">
-      <h2 className="text-2xl font-bold mb-4">Air Conditioners Spare Parts</h2>
+      <h2 className="text-2xl font-bold mb-4">Air Condition Spare Parts</h2>
       <Carousel autoplay speed={200} className="w-full custom-carousel" arrows={true} >
         {imageUrls.map((url, index) => (
           <div key={index} className="w-full md:h-96 flex items-center justify-center">
