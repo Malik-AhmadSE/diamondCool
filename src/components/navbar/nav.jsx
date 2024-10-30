@@ -34,7 +34,7 @@ const Nav = () => {
   return (
     <>
       <div className={`!w-full !h-36  fixed md:!w-full md:top-0 md:left-0 z-40 hidden md:flex justify-center `}>
-        <Flex gap="middle" vertical className="!w-[95%] overflow-hidden bg-Nav bg-cover">
+        <Flex gap="middle" vertical className="!w-[94.5%] overflow-hidden bg-Nav bg-cover">
           <Flex vertical={value === 'vertical'} className="!w-[95%] flex items-center justify-between mt-3">
             <div className="flex flex-col !w-1/2 items-center justify-center">
               {/* <Typography className='text-xl font-bold italic text-green-700'>

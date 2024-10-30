@@ -24,21 +24,19 @@ function App() {
 
   return (
     <div className='pl-5 pr-5'>
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={ <Home />}/>
         <Route path='/contact' element={ <Contact />}/>
         <Route path='/product' element={<Products/>} />
         <Route path='/about' element={<About/>} />
     </Routes>
-    
-    {/* <a href="https://wa.me/+971558531096"><FloatButton  className='w-14 h-14 bg-green-700 border border-green-700' icon={<WhatsAppOutlined  className='text-black font-bold hover:text-white text-[20px]' />}/></a> */}
     <FloatingWhatsApp phoneNumber='+971558531096' chatboxHeight={'350px'} darkMode={true} accountName='Helper' avatar={Expert} statusMessage="Online" chatMessage={   <>
           Hi,
           Do you want to buy something?<br />
           You can send me a message here.<br />
           Thanks!
-        </>} />
-    {/* <Construct /> */}
+        </>} /> */}
+    <Construct />
    
     </div>
   )
