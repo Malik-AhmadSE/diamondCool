@@ -21,11 +21,23 @@ body{
   animation: marquee 10s linear infinite; /* Adjust duration as needed */
 }
 
-.custom-carousel .slick-arrow {
- color: #000 !important;
-  
+.custom-carousel .slick-arrow.slick-prev,
+.custom-carousel .slick-arrow.slick-next {
+  color: #000 !important;
+  font-size: 24px !important;
+  transform: scale(2) !important;
+  z-index: 1 !important;
 }
 
-.custom-carousel .slick-arrow:hover {
-  color: #f39c12; /* Change color on hover, if desired */
+.custom-carousel .slick-arrow.slick-prev {
+  left: 20px !important; /* Add more space from left edge */
+}
+
+.custom-carousel .slick-arrow.slick-next {
+  right: 20px !important; /* Add more space from right edge */
+}
+
+.custom-carousel .slick-arrow.slick-prev:hover,
+.custom-carousel .slick-arrow.slick-next:hover {
+  color: #f39c12 !important;
 }

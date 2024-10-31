@@ -8,7 +8,7 @@ function ContactInfo() {
     return (
        <div className='flex justify-center items-center'>
         <div>
-        <div className='w-full flex flex-col md:flex-row gap-2'>
+        <div className='w-full flex flex-col md:flex-row gap-10'>
                 <div className='w-full md:w-[60%] z-1 flex flex-col gap-2'>
                     <h6 className='font-semibold mb-2'>Reach Us</h6>
                     <h1 className='w-full md:w-[550px] font-bold md:text-[45px] text-[25px]'>Contact us</h1>

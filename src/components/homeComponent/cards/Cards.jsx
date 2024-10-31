@@ -1,15 +1,66 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Card } from 'antd';
 import Buttons from '../../buttons/Buttons';
 import CardsLoader from '../../Common/skeleton/Cards.jsx';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Cards = () => {
   const [loading, setLoading] = useState(true);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const cardsContainerRef = useRef(null);
+  const buttonContainerRef = useRef(null);
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 4000);
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  useGSAP(() => {
+    if (!loading) {
+      // Reset any existing animations
+      gsap.set([cardsContainerRef.current.children, buttonContainerRef.current], { clearProps: "all" });
+
+      // Animate cards
+      gsap.from(cardsContainerRef.current.children, {
+        opacity: 0,
+        y: isMobile ? 30 : 50,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: cardsContainerRef.current,
+          start: "top 80%",
+          toggleActions: "play none none reverse"
+        }
+      });
+
+      // Animate button
+      gsap.from(buttonContainerRef.current, {
+        opacity: 0,
+        y: 20,
+        duration: 0.6,
+        delay: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: buttonContainerRef.current,
+          start: "top 90%",
+          toggleActions: "play none none reverse"
+        }
+      });
+    }
+  }, [loading, isMobile]);
 
   return (
     <>
@@ -17,7 +68,7 @@ const Cards = () => {
         <CardsLoader />
       ) : (
         <>
-          <div className=' w-full flex flex-wrap gap-8 justify-center mt-48 px-5 md:gap-16'>
+          <div ref={cardsContainerRef} className='w-full flex flex-wrap gap-8 justify-center mt-48 px-5 md:gap-16'>
             <Card
               hoverable
               bordered={false}
@@ -96,7 +147,7 @@ const Cards = () => {
               </p>
             </Card>
           </div>
-          <div className=' w-full mt-24 flex justify-center items-center'>
+          <div ref={buttonContainerRef} className='w-full mt-24 flex justify-center items-center'>
             <Buttons />
           </div>
         </>

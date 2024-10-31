@@ -1,26 +1,78 @@
-import React from 'react'; 
-import Buttons from '../../buttons/Buttons'; 
+import React, { useRef } from 'react';
+import Buttons from '../../buttons/Buttons';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-function Quality() { 
+gsap.registerPlugin(ScrollTrigger);
+
+function Quality() {
+    const containerRef = useRef(null);
+    const titleRef = useRef(null);
+    const contentRef = useRef(null);
+    const buttonRef = useRef(null);
+
+    useGSAP(() => {
+        gsap.set([titleRef.current, contentRef.current, buttonRef.current], { clearProps: "all" });
+
+        gsap.from(titleRef.current, {
+            opacity: 0,
+            y: 30,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: containerRef.current,
+                start: "top 95%",
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.from(contentRef.current, {
+            opacity: 0,
+            y: 40,
+            duration: 1,
+            delay: 0.3,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: containerRef.current,
+                start: "top 90%",
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.from(buttonRef.current, {
+            opacity: 0,
+            y: 20,
+            duration: 0.8,
+            delay: 0.6,
+            ease: "back.out",
+            scrollTrigger: {
+                trigger: containerRef.current,
+                start: "top 80%",
+                toggleActions: "play none none reverse"
+            }
+        });
+    });
+
     return (
-        <div className='w-full md:mt-60 -mt-20 z-1'>
-        <div className='w-[90%] flex flex-col md:flex-row gap-3 '> {/* Change flex direction based on screen size */}
-            <div className=''>
-                <h1 className='text-[30px] md:text-[45px] font-bold'> {/* Responsive font size */}
-                    Quality Appliances for Every Home
-                </h1>
-            </div> 
-            <div className='w-full md:w-1/2 md:pl-10 flex flex-col justify-center'> {/* Full width on small screens */}
-                <p className='pt-5 tracking-wider text-base md:text-lg'> {/* Responsive text size */}
-                    Welcome to our store, where you'll find a wide selection of refrigerators, air conditioners, washing machines, and spare parts. We offer top-quality products at affordable prices, ensuring your home is equipped with the best appliances.
-                </p> 
-                <div className='mt-10 pb-10'>
-                    <Buttons /> 
-                </div> 
-            </div> 
-        </div> 
+        <div ref={containerRef} className='w-full md:mt-60 -mt-80 z-1 flex justify-center items-center'>
+            <div className='w-[95%] max-w-[1440px] flex flex-col md:flex-row gap-3'>
+                <div className=''>
+                    <h1 ref={titleRef} className='text-[30px] md:text-[45px] font-bold'>
+                        Quality Appliances for Every Home
+                    </h1>
+                </div>
+                <div className='w-full md:w-1/2 md:pl-10 flex flex-col justify-center'>
+                    <p ref={contentRef} className='pt-5 tracking-wider text-base md:text-lg'>
+                        Welcome to our store, where you'll find a wide selection of refrigerators, air conditioners, washing machines, and spare parts. We offer top-quality products at affordable prices, ensuring your home is equipped with the best appliances.
+                    </p>
+                    <div ref={buttonRef} className='mt-10 pb-10'>
+                        <Buttons />
+                    </div>
+                </div>
+            </div>
         </div>
-    ); 
-} 
+    );
+}
 
 export default Quality;

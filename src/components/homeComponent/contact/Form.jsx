@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import {
     Checkbox,
     Form,
@@ -8,24 +8,64 @@ import {
     Select,
     Button,
 } from 'antd';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const { Option } = Select;
 
 function ContactInfo() {
     const [btn, setbtn] = React.useState("primary");
+    const formRef = useRef(null);
+    const titleRef = useRef(null);
+    const contentRef = useRef(null);
+
+    useGSAP(() => {
+        // Reset any existing animations
+        gsap.set([titleRef.current, contentRef.current], { clearProps: "all" });
+
+        // Title section animation
+        gsap.from(titleRef.current, {
+            opacity: 0,
+            y: -50,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: formRef.current,
+                start: "top 80%",
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        // Form content animation with stagger effect
+        gsap.from(contentRef.current.children, {
+            opacity: 0,
+            y: 30,
+            stagger: 0.2,
+            duration: 0.8,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: formRef.current,
+                start: "top 60%",
+                toggleActions: "play none none reverse"
+            }
+        });
+    });
 
     return (
-        <div className='flex justify-center items-center md:mt-28 mt-16'>
+        <div className='flex justify-center items-center md:mt-28 mt-16' ref={formRef}>
             <div>
-            <div className='w-full flex flex-col justify-center items-center '>
+            <div className='w-full flex flex-col justify-center items-center' ref={titleRef}>
                 <h6 className='font-semibold mb-2'>Get in Touch</h6>
                 <h1 className='font-bold md:text-[45px] text-[25px]'>Contact Us</h1>
                 <p className='pt-5 tracking-wider'>We'd love to hear from you!</p>
             </div>
-            <div className='w-full mt-16 z-1 flex justify-center items-center gap-3 flex-wrap'>
+            <div className='w-full mt-16 z-1 flex justify-center items-center gap-3 flex-wrap' ref={contentRef}>
                 <Form
                     name="layout-multiple-horizontal"
-                    layout="vertical"  // Changed to vertical for better mobile responsiveness
+                    layout="vertical"
                     className='w-full max-w-[800px] flex flex-col justify-center items-center'
                 >
                     <div className='flex flex-col md:flex-row md:gap-10 gap-5 w-full'>

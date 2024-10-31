@@ -33,9 +33,10 @@ function Home() {
      <div className='pl-4 pr-4'>
      <Form />
      </div>
+     {/* <Cards /> */}
       {/* <Expertise/>
       <Reliable />
-      <Cards />
+      
       <Services />
       <Quotes />
       <Customer />

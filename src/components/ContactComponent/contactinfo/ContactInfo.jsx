@@ -7,43 +7,55 @@ import Locate from '../../../assets/images/icons/locate.png';
 
 function ContactInfo() {
     return (
-        <div className='flex justify-center items-center md:mt-36 mt-20'>
-            <div>
-            <div className='w-[90%] '>
-                <h6 className='font-semibold mb-2'>Reach Us</h6>
-                <h1 className='w-full md:w-[550px] font-bold text-[45px]'>Get in Touch</h1>
-                <p className='w-full md:w-[550px] pt-5 tracking-wider'>We’re here to assist you with any inquiries.</p>
-            </div>
-            <div className='w-full mt-4 z-1 flex flex-col md:flex-row gap-3'>
-                <div className='pl-10 pt-10 flex flex-col gap-10 w-full md:w-[45%]'>
-                    <div className='flex items-start'>
-                        <Image src={Email} preview={false} className='!w-[25px] mr-2' />
-                        <div>
-                            <h3 className='text-[20px] font-bold'>Email</h3>
-                            <p>Contact us anytime for support.</p>
-                            <p className='italic underline'>diamondcooluae@gmail.com</p>
+        <div className='w-full flex justify-center items-center md:mt-36 mt-20'>
+            <div className='w-[95%] max-w-[1440px]'>
+                <div>
+                    <h6 className='font-semibold mb-2 text-lg md:text-base'>Reach Us</h6>
+                    <h1 className='font-bold text-[25px] md:text-[45px]'>Get in Touch</h1>
+                    <p className='pt-3 md:pt-5 tracking-wider text-sm md:text-base'>We're here to assist you with any inquiries.</p>
+                </div>
+                <div className='w-full mt-8 md:mt-10 flex flex-col md:flex-row gap-8 md:gap-10'>
+                    <div className='flex flex-col gap-8 md:gap-10 w-full md:w-[45%]'>
+                        <div className='flex items-start gap-3'>
+                            <Image src={Email} preview={false} className='!w-[22px] md:!w-[25px]' />
+                            <div>
+                                <h3 className='text-[18px] md:text-[20px] font-bold mb-1'>Email</h3>
+                                <p className='text-sm md:text-base mb-1'>Contact us anytime for support.</p>
+                                <a href="mailto:diamondcooluae@gmail.com" className='italic underline text-sm md:text-base text-blue-600'>
+                                    diamondcooluae@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div className='flex items-start gap-3'>
+                            <Image src={Call} preview={false} className='!w-[22px] md:!w-[25px]' />
+                            <div>
+                                <h3 className='text-[18px] md:text-[20px] font-bold mb-1'>Phone</h3>
+                                <p className='text-sm md:text-base mb-1'>Call us for immediate assistance.</p>
+                                <a href="tel:+971558531096" className='italic underline text-sm md:text-base text-blue-600'>
+                                    +971 55 853 1096
+                                </a>
+                            </div>
+                        </div>
+                        <div className='flex items-start gap-3'>
+                            <Image src={Locate} preview={false} className='!w-[22px] md:!w-[25px]' />
+                            <div>
+                                <h3 className='text-[18px] md:text-[20px] font-bold mb-1'>Office</h3>
+                                <p className='text-sm md:text-base'>
+                                    P.O.Box # 379672, shop # 18,<br />
+                                    Fish Round About, Deira<br />
+                                    Dubai-U.A.E
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div className='flex items-start'>
-                        <Image src={Call} preview={false} className='!w-[25px] mr-2' />
-                        <div>
-                            <h3 className='text-[20px] font-bold'>Phone</h3>
-                            <p>Call us for immediate assistance.</p>
-                            <p className='italic underline'>+971558531096</p>
-                        </div>
-                    </div>
-                    <div className='flex items-start'>
-                        <Image src={Locate} preview={false} className='!w-[25px] mr-2' />
-                        <div>
-                            <h3 className='text-[20px] font-bold'>Office</h3>
-                            <p>P.O.Box # 379672, shop # 18, Fish Round About, Deira Dubai-U.A.E</p>
-                        </div>
+                    <div className='w-full md:w-[50%] flex justify-center items-center'>
+                        <Image 
+                            src={ExpertisePic} 
+                            preview={false} 
+                            className='w-full md:w-auto object-cover rounded-lg shadow-lg'
+                        />
                     </div>
                 </div>
-                <div className='w-full md:w-[50%] pl-10 flex justify-center'>
-                    <Image src={ExpertisePic} preview={false} className='w-auto' />
-                </div>
-            </div>
             </div>
         </div>
     );

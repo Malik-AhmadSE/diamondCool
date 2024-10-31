@@ -1,18 +1,86 @@
 import { Image } from 'antd';
-import React from 'react';
+import React, { useRef } from 'react';
 import ExpertisePic from '../../../assets/images/airproducts/air16.png';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Expertise() {
+    const containerRef = useRef(null);
+    const titleRef = useRef(null);
+    const contentRef = useRef(null);
+    const imageRef = useRef(null);
+
+    useGSAP(() => {
+        gsap.set([titleRef.current, contentRef.current, imageRef.current], { clearProps: "all" });
+
+        gsap.from(titleRef.current, {
+            opacity: 0,
+            y: 30,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: containerRef.current,
+                start: "top 80%",
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.from(contentRef.current, {
+            opacity: 0,
+            y: 40,
+            duration: 1,
+            delay: 0.3,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: containerRef.current,
+                start: "top 80%",
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.from(imageRef.current, {
+            opacity: 0,
+            x: 50,
+            duration: 1,
+            delay: 0.5,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: containerRef.current,
+                start: "top 70%",
+                toggleActions: "play none none reverse"
+            }
+        });
+    });
+
     return (
-        <div className='w-full md:mt-36 mt-12 z-1 flex justify-center items-center '>
-            <div className='w-[90%] flex-wrap md:flex-nowrap flex gap-3'>
-            <div className='w-full md:w-auto'>
-                <h1 className='md:w-[550px] font-bold md:text-[45px] text-[30px]'>Expertise that Keeps Your Machines in Optimal Condition</h1>
-                <p className='md:w-[550px] pt-5 tracking-wider'>With years of experience in the appliance industry, Diamond Cool understands what it takes to keep your machines running smoothly. Our expertise ensures that you receive top-quality spare parts and expert advice for optimal performance.</p>
-            </div>
-            <div className='w-full md:w-[50%] md:pl-10 flex justify-center'>
-                <Image src={ExpertisePic} preview={false} className='w-auto max-w-full h-auto' />
-            </div>
+        <div ref={containerRef} className='w-full md:mt-48 mt-20 z-1 flex justify-center items-center'>
+            <div className='w-[95%] max-w-[1440px] flex flex-wrap md:flex-nowrap gap-8 md:gap-12 px-4 md:px-0'>
+                <div className='w-full md:w-1/2 space-y-6'>
+                    <h1 
+                        ref={titleRef}
+                        className='font-bold text-[32px] md:text-[45px] leading-tight md:text-center md:text-left'
+                    >
+                        Expertise that Keeps Your Machines in Optimal Condition
+                    </h1>
+                    <p 
+                        ref={contentRef}
+                        className='text-base md:text-lg tracking-wider text-justify text-gray-700 text-center md:text-left'
+                    >
+                        With years of experience in the appliance industry, Diamond Cool understands what it takes to keep your machines running smoothly. Our expertise ensures that you receive top-quality spare parts and expert advice for optimal performance.
+                    </p>
+                </div>
+                <div className='w-full md:w-1/2 flex justify-center items-center md:justify-end'>
+                    <div ref={imageRef} className='w-full max-w-[500px]'>
+                        <Image 
+                            src={ExpertisePic} 
+                            preview={false} 
+                            className='w-full h-auto object-cover rounded-lg shadow-lg' 
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     );
