@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className='pl-5 pr-5'>
-    //   <Routes>
+    {/* //   <Routes>
     //     <Route path='/' element={ <Home />}/>
     //     <Route path='/contact' element={ <Contact />}/>
     //     <Route path='/product' element={<Products/>} />
@@ -35,7 +35,7 @@ function App() {
     //       Do you want to buy something?<br />
     //       You can send me a message here.<br />
     //       Thanks!
-    //     </>} />
+    //     </> */}
    <Construct /> 
    
     </div>
