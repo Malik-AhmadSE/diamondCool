@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Image, Skeleton } from 'antd';
-
+import Pic from '../../../assets/landing.jpg'
 function Hero() {
   const [loading, setLoading] = useState(true);
 
@@ -11,13 +11,19 @@ function Hero() {
   }, []);
 
   return (
-    <>
-      {loading ? (
-        <Skeleton.Image className='!w-full mt-8 md:mt-24 z-0 !h-[200px] md:!h-[360px] bg-cover flex flex-col justify-center items-center mb-28' />
-      ) : (
-        <Image src={'https://res.cloudinary.com/dvf9mmcww/image/upload/v1728178665/22_vmd5cw.png'} preview={false} className='!w-full mt-28 md:mt-44 z-0 !h-[250px] md:!h-[600px] flex flex-col justify-center items-center px-4' />
-      )}
-    </>
+    <div className="w-full flex justify-center">
+      <div className="!w-screen md:!w-[96%]">
+        {loading ? (
+          <Skeleton.Image className='!w-full mt-8 md:mt-24 z-0 !h-[250px] md:!h-[600px] bg-cover flex flex-col justify-center items-center mb-28' />
+        ) : (
+          <Image 
+            src={Pic} 
+            preview={false} 
+            className='!w-full mt-28 md:mt-44 z-0 !h-[250px] md:!h-[600px] flex flex-col justify-center items-center' 
+          />
+        )}
+      </div>
+    </div>
   );
 }
 

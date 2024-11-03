@@ -62,8 +62,8 @@ function Washing() {
   });
 
   return (
-    <div ref={containerRef} className="p-4 text-center">
-      <h2 ref={titleRef} className="text-2xl font-bold mb-4">Washing Machine Spare Parts</h2>
+    <div ref={containerRef} className="md:px-4 text-center">
+      <h2 ref={titleRef} className="md:text-4xl text-3x1 font-bold mb-4">Washing Machine Spare Parts</h2>
       <div ref={carouselRef}>
         <Carousel autoplay speed={200} className="w-full custom-carousel" arrows={true}>
           {imageUrls.map((url, index) => (
