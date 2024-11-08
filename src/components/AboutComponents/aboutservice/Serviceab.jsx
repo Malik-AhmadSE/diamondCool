@@ -59,7 +59,7 @@ function Serviceab() {
     });
 
     return (
-        <div ref={containerRef} className='flex w-full px-8 justify-center items-center flex-wrap sm:pb-0'>
+        <div ref={containerRef} className='flex w-full md:px-8 px-4 justify-center items-center flex-wrap sm:pb-0'>
             <div className='w-full'>
                 <div className='flex flex-col md:flex-row gap-10 md:gap-16'>
                     <div ref={titleRef} className='w-full md:w-[48%]'>

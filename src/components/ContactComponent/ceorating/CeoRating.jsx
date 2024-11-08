@@ -66,7 +66,7 @@ function CeoRating() {
     }, [isMobile]);
 
     return (
-        <div className='w-full px-8 flex flex-col justify-center items-center text-center'>
+        <div className='w-full md:px-8 px-4 flex flex-col justify-center items-center text-center'>
             <h6 ref={ratingRef} className='font-semibold mb-2'>
                 <Rate defaultValue={5} />
             </h6>
