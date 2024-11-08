@@ -7,7 +7,7 @@ import Locate from '../../../assets/images/icons/locate.png';
 
 function ContactInfo() {
     return (
-        <div className='w-full px-8 flex justify-center items-center md:mt-72 mt-20'>
+        <div className='w-full md:px-8 px-4 flex justify-center items-center md:mt-72 mt-20'>
             <div className='w-full'>
                 <div>
                     <h6 className='font-semibold mb-2 text-lg md:text-base'>Reach Us</h6>

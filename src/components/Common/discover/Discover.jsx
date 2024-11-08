@@ -55,7 +55,7 @@ function Discover() {
   }, []);
 
   return (
-    <div className='w-full px-8 mt-56 flex justify-center item-center mb-[150px]'>
+    <div className='w-full md:px-8  px-4 mt-56 flex justify-center item-center mb-[150px]'>
        <Card 
         ref={cardRef}
         hoverable 

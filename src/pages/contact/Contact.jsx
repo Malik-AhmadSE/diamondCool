@@ -51,7 +51,7 @@ function Contact() {
       <div className='mt-36'>
         <Location />
       </div>
-      <div className='md:mt-40 mt-32'>
+      <div className='md:mt-40 mt-56'>
         <Faq />
         <CeoRating />
         <Discover />

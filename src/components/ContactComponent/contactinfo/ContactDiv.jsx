@@ -6,7 +6,7 @@ import Locate from '../../../assets/images/icons/locate.png';
 
 function ContactInfo() {
     return (
-       <div className='w-full px-8 flex justify-center items-center'>
+       <div className='w-full md:px-8 px-4 flex justify-center items-center'>
         <div>
         <div className='w-full flex flex-col md:flex-row gap-10'>
                 <div className='w-full md:w-[60%] z-1 flex flex-col gap-2'>
