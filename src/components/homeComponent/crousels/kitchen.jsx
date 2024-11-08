@@ -63,7 +63,7 @@ function Kitchen() {
 
   return (
     <div ref={containerRef} className="w-full md:px-8 px-4 text-center">
-      <h2 ref={titleRef} className="md:text-4xl text-sm font-bold mb-4">Kitchen Spare Parts</h2>
+      <h2 ref={titleRef} className="md:text-4xl text-sm font-bold mb-4 uppercase">Kitchen Spare Parts</h2>
       <div ref={carouselRef}>
         <Carousel autoplay speed={200} className="w-full custom-carousel" arrows={true}>
           {imageUrls.map((url, index) => (
