@@ -5,7 +5,7 @@ import Buttons from '../../buttons/Buttons';
 
 function Quality() {
     return (
-       <div className='w-full px-8 flex justify-center items-center'>
+       <div className='w-full md:px-8 px-4 flex justify-center items-center'>
          <div className='w-full z-1 flex flex-col md:flex-row gap-10 md:p-5'>
             <div className='flex-1'>
                 <h1 className='text-[30px] text-justify md:text-left md:text-[45px] font-bold'>

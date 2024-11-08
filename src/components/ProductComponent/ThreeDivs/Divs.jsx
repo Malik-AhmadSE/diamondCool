@@ -33,7 +33,7 @@ const Divs = () => {
   }, []);
 
   return (
-    <div className='w-full px-8 flex items-center justify-center'>
+    <div className='w-full md:px-8 px-4 flex items-center justify-center'>
       <div ref={containerRef} className='w-full flex flex-wrap md:flex-nowrap justify-center gap-10 items-center p-10'>
         <Card
           hoverable

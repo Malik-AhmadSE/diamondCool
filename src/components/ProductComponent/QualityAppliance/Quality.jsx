@@ -55,7 +55,7 @@ function Quality() {
     });
 
     return (
-        <div ref={containerRef} className='w-full px-8 md:mt-56 mt-32  z-1 flex justify-center items-center'>
+        <div ref={containerRef} className='w-full md:px-8 px-4 md:mt-56 mt-32  z-1 flex justify-center items-center'>
             <div className='w-full  flex flex-col md:flex-row gap-2'>
                 <div className=''>
                     <h1 ref={titleRef} className='text-[30px] text-justify md:text-left md:text-[45px] font-bold'>
