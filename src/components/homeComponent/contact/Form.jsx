@@ -55,7 +55,7 @@ function ContactInfo() {
     });
 
     return (
-        <div className='w-full px-8 md:px-0 flex justify-center items-center md:mt-28 mt-16' ref={formRef}>
+        <div className='w-full px-4 md:px-0 flex justify-center items-center md:mt-28 mt-16' ref={formRef}>
             <div>
             <div className='w-full flex flex-col justify-center items-center' ref={titleRef}>
                 <h6 className='font-semibold mb-2'>Get in Touch</h6>
