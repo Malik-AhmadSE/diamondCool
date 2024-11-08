@@ -110,7 +110,7 @@ function Brands() {
     <div className="!w-full px-8  flex-col -mt-2 md:mt-2 py-4 items-center justify-center mb-7">
       <div className='flex justify-center items-center'>
         <Flex className='!w-full  h-full flex bg-logo bg-cover justify-center items-center gap-10'>
-          <div ref={headerRef} className="flex !h-full justify-start !items-center relative top-2 mb-4 w-full">
+          <div ref={headerRef} className="w-full flex !h-full justify-start !items-center relative top-2 mb-4 w-full">
             <span className="text-[10px] md:text-[45px] text-white px-10">Visit Our Online Stores</span>
           </div>
           
