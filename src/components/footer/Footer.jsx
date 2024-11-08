@@ -23,8 +23,8 @@ function Footer() {
               <p>Mail:diamondcooluae@gmail.com</p>
             </address>
             <div className='flex flex-row gap-3 items-center pt-5 md:pt-10'>
-              <Image width={30} src={Facebook} preview={false}/>
-              <Image width={30} src={Insta} preview={false} />
+              <a href='https://www.facebook.com/profile.php?id=61567027079945&notif_id=1729331785518910&notif_t=page_user_activity&ref=notif'><Image width={30} src={Facebook} preview={false}/></a>
+              <a href="https://www.instagram.com/invites/contact/?igsh=rw0p2v8to4c4&utm_content=w4vvd62"><Image width={30} src={Insta} preview={false} /></a>
               <Image width={20} src={Linkdin} preview={false} />
               <Image width={20} src={Tweeter} preview={false} />
             </div>
