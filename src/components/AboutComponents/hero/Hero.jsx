@@ -45,7 +45,7 @@ function Hero() {
     });
 
     return (
-        <div ref={containerRef} className='w-full px-8 mt-32 md:mt-44 flex justify-center items-center'>
+        <div ref={containerRef} className='w-full md:px-8 px-4 mt-32 md:mt-44 flex justify-center items-center'>
            <div className='w-full z-1 flex gap-6 flex-wrap md:flex-nowrap'>
                 <div className='w-full md:w-[600px]' ref={titleRef}>
                     <h1 className='font-bold text-justify text-[32px] md:text-[45px] leading-tight text-center md:text-left'>
@@ -53,7 +53,7 @@ function Hero() {
                     </h1>
                 </div>
                 <div className='w-full md:w-[45%] md:pl-10 flex flex-col justify-center items-center md:items-start'>
-                    <p ref={contentRef} className='pt-5 tracking-wider text-justify text-center  text-base md:text-lg'>
+                    <p ref={contentRef} className='pt-5 tracking-wider text-justify text-center text-base md:text-lg'>
                         Welcome to Diamond Cool, your trusted partner for high-quality spare parts for refrigerators, air conditioners, and washing machines. We are dedicated to providing reliable, durable, and affordable solutions for all your home appliance needs.
                     </p>
                     <div ref={buttonRef} className='pt-8 md:pt-10 w-full flex justify-center md:justify-start'>
