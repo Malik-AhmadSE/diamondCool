@@ -111,7 +111,7 @@ function Brands() {
       <div className='flex justify-center items-center'>
         <Flex className='!w-full  h-full flex bg-logo bg-cover justify-center items-center gap-10'>
           <div ref={headerRef} className="flex !h-full justify-start !items-center relative top-2 mb-4 w-full">
-            <span className="text-sm md:text-[45px] text-white px-10">Visit Our Online Stores</span>
+            <span className="text-[10px] md:text-[45px] text-white px-10">Visit Our Online Stores</span>
           </div>
           
           <div ref={storesRef} className="flex flex-row items-center justify-center gap-8 !w-full  relative overflow-hidden">

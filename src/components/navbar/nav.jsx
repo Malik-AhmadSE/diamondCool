@@ -109,7 +109,7 @@ const Nav = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <div className='!w-full fixed z-50 flex items-center justify-center top-0 left-0 px-8'>
+      <div className='!w-full fixed z-50 flex items-center justify-center top-0 left-0 px-4'>
   <Flex className={`!w-full bg-Nav md:hidden self-center z-40 p-4 justify-between items-center overflow-x-hidden px-8`}>
     <div className="flex flex-col w-full">
       <Image
