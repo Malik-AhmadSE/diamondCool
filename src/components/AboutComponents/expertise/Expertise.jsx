@@ -56,7 +56,7 @@ function Expertise() {
     });
 
     return (
-        <div ref={containerRef} className='w-full md:px-8 px-4 md:mt-48 mt-20 z-1 flex justify-center items-center'>
+        <div ref={containerRef} className='w-full md:px-8 md:mt-48 mt-20 z-1 flex justify-center items-center'>
             <div className='w-full flex flex-wrap md:flex-nowrap gap-8 md:gap-12 px-4 md:px-0'>
                 <div className='w-full md:w-1/2 space-y-6'>
                     <h1 
