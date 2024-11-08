@@ -52,7 +52,7 @@ function QualityQoutes() {
   });
 
   return (
-    <div ref={containerRef} className='w-full flex justify-center items-center'>
+    <div ref={containerRef} className='w-full px-8 flex justify-center items-center'>
       <div className='md:mt-40 mt-20 flex flex-col justify-center items-center text-center'>
         <h6 ref={subtitleRef} className='font-semibold mb-2 text-lg md:text-base'>Quality</h6>
         <h1 ref={titleRef} className='w-full max-w-[750px] font-bold text-[25px] text-2xl md:text-[45px]'>

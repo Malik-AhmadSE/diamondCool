@@ -107,14 +107,14 @@ function Brands() {
   }, []);
 
   return (
-    <div className="md:!w-full flex-col -mt-2 py-4 items-center justify-center mb-7">
+    <div className="!w-full px-8  flex-col -mt-2 md:mt-2 py-4 items-center justify-center mb-7">
       <div className='flex justify-center items-center'>
-        <Flex className='md:!w-[96%] !w-screen h-full flex bg-logo bg-cover justify-center items-center gap-10'>
+        <Flex className='!w-full  h-full flex bg-logo bg-cover justify-center items-center gap-10'>
           <div ref={headerRef} className="flex !h-full justify-start !items-center relative top-2 mb-4 w-full">
             <span className="text-sm md:text-[45px] text-white px-10">Visit Our Online Stores</span>
           </div>
           
-          <div ref={storesRef} className="flex flex-row items-center justify-center gap-8 w-full relative overflow-hidden">
+          <div ref={storesRef} className="flex flex-row items-center justify-center gap-8 !w-full  relative overflow-hidden">
             <div className="absolute inset-0 bg-cover animate-pulse"></div>
             <Tooltip title="Buy from noon" className="flex items-center justify-center relative z-10">
               <a href='https://www.noon.com/seller/p-149548/?offer_code=ze536cca4ff792a1163e9z-1&sku=ZE536CCA4FF792A1163E9Z' 
@@ -143,14 +143,14 @@ function Brands() {
         </Flex>
       </div>
 
-      <div ref={carouselRef}>
-        <Carousel autoplay speed={200} className="w-screen md:!w-screen md:px-[24px] -mt-3">
+      <div ref={carouselRef} className="w-full md:mt-12 mt-6">
+        <Carousel autoplay speed={200} className="w-full -mt-3">
           {imageUrls.map((url, index) => (
-            <div key={index} className="w-full md:h-56 flex items-center justify-center">
+            <div key={index} className="w-full flex items-center justify-center">
               <img
                 src={url}
                 alt={`Image ${index + 1}`}
-                className="!w-[96%] md:!w-[96.7%] md:h-full h-[100px] object-contain"
+                className="w-full object-contain"
                 style={{ display: 'block' }}
               />
             </div>
@@ -158,9 +158,9 @@ function Brands() {
         </Carousel>
       </div>
 
-      <div className='w-full md:!px-6 -mt-2'>
-        <div className="overflow-hidden">
-          <div ref={marqueeRef} className="whitespace-nowrap animate-marquee text-xl font-bold italic text-green-700">
+      <div className='w-full md:mt-12 mt-6'>
+        <div className="overflow-hidden w-full">
+          <div ref={marqueeRef} className="whitespace-nowrap animate-marquee text-xl font-bold italic text-green-700 w-full">
             <span className="mx-2">Diamond Cool Aircondition Spare Parts Trading LLC</span>
             <span className="mx-2">Diamond Cool Aircondition Spare Parts Trading LLC</span>
             <span className="mx-2">Diamond Cool Aircondition Spare Parts Trading LLC</span>

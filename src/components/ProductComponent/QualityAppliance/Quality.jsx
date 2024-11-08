@@ -55,15 +55,15 @@ function Quality() {
     });
 
     return (
-        <div ref={containerRef} className='w-full md:mt-60 -mt-80 z-1 flex justify-center items-center'>
-            <div className='w-[95%] max-w-[1440px] flex flex-col md:flex-row gap-3'>
+        <div ref={containerRef} className='w-full px-8 md:mt-56 mt-32  z-1 flex justify-center items-center'>
+            <div className='w-full  flex flex-col md:flex-row gap-2'>
                 <div className=''>
-                    <h1 ref={titleRef} className='text-[30px] md:text-[45px] font-bold'>
+                    <h1 ref={titleRef} className='text-[30px] text-justify md:text-left md:text-[45px] font-bold'>
                         Quality Appliances for Every Home
                     </h1>
                 </div>
                 <div className='w-full md:w-1/2 md:pl-10 flex flex-col justify-center'>
-                    <p ref={contentRef} className='pt-5 tracking-wider text-base md:text-lg'>
+                    <p ref={contentRef} className='pt-5 text-justify md:text-left tracking-wider text-base md:text-lg'>
                         Welcome to our store, where you'll find a wide selection of refrigerators, air conditioners, washing machines, and spare parts. We offer top-quality products at affordable prices, ensuring your home is equipped with the best appliances.
                     </p>
                     <div ref={buttonRef} className='mt-10 pb-10'>

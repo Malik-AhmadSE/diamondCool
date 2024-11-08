@@ -23,20 +23,21 @@ export const MessageComponent = () => {
 function App() {
 
   return (
-    <div className='pl-5 pr-5'>
-    {/* //   <Routes>
-    //     <Route path='/' element={ <Home />}/>
-    //     <Route path='/contact' element={ <Contact />}/>
-    //     <Route path='/product' element={<Products/>} />
-    //     <Route path='/about' element={<About/>} />
-    // </Routes>
-    // <FloatingWhatsApp phoneNumber='+971558531096' chatboxHeight={'350px'} darkMode={true} accountName='Helper' avatar={Expert} statusMessage="Online" chatMessage={   <>
-    //       Hi,
-    //       Do you want to buy something?<br />
-    //       You can send me a message here.<br />
-    //       Thanks!
-    //     </> */}
-   <Construct /> 
+    <div className='overflow-x-hidden'>
+      <Routes>
+         <Route path='/' element={ <Home />}/>
+         <Route path='/contact' element={ <Contact />}/>
+         <Route path='/product' element={<Products/>} />
+         <Route path='/about' element={<About/>} />
+     </Routes>
+     <FloatingWhatsApp phoneNumber='+971558531096' chatboxHeight={'350px'} darkMode={true} accountName='Helper' avatar={Expert} statusMessage="Online" chatMessage={   <>
+           Hi,
+           Do you want to buy something?<br />
+           You can send me a message here.<br />
+           Thanks!
+         </>} />
+        
+  {/* //  <Construct />  */}
    
     </div>
   )

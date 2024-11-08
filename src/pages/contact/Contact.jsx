@@ -17,28 +17,28 @@ gsap.registerPlugin(ScrollTrigger);
 function Contact() {
   const containerRef = useRef(null);
 
-  useGSAP(() => {
-    const sections = containerRef.current.children;
+  // useGSAP(() => {
+  //   const sections = containerRef.current.children;
     
-    Array.from(sections).forEach((section, index) => {
-      if (section.tagName !== 'NAV' && section.tagName !== 'FOOTER') {
-        gsap.from(section, {
-          opacity: 0,
-          y: 50,
-          duration: 1.2,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: section,
-            start: "top 80%",
-            end: "bottom 20%",
-            toggleActions: "play none none reverse",
-            scrub: 1
-          },
-          delay: index * 0.2
-        });
-      }
-    });
-  }, []);
+  //   Array.from(sections).forEach((section, index) => {
+  //     if (section.tagName !== 'NAV' && section.tagName !== 'FOOTER') {
+  //       gsap.from(section, {
+  //         opacity: 0,
+  //         y: 50,
+  //         duration: 1.2,
+  //         ease: "power3.out",
+  //         scrollTrigger: {
+  //           trigger: section,
+  //           start: "top 80%",
+  //           end: "bottom 20%",
+  //           toggleActions: "play none none reverse",
+  //           scrub: 1
+  //         },
+  //         delay: index * 0.2
+  //       });
+  //     }
+  //   });
+  // }, []);
 
   return (
     <div ref={containerRef}>

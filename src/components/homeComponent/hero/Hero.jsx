@@ -11,15 +11,16 @@ function Hero() {
   }, []);
 
   return (
-    <div className="w-full flex justify-center">
-      <div className="!w-screen md:!w-[96%]">
+    <div className="!w-full px-8 flex justify-center">
+      <div className="!w-full">
         {loading ? (
-          <Skeleton.Image className='!w-full mt-8 md:mt-24 z-0 !h-[250px] md:!h-[600px] bg-cover flex flex-col justify-center items-center mb-28' />
+          <Skeleton.Image className='!w-full  mt-8 md:mt-24 z-0 !h-[250px] md:!h-[650px] bg-cover flex flex-col justify-center items-center mb-28' />
         ) : (
           <Image 
             src={Pic} 
             preview={false} 
-            className='!w-full mt-28 md:mt-44 z-0 !h-[250px] md:!h-[600px] flex flex-col justify-center items-center' 
+            className='!w-screen mt-32 md:mt-44 z-0 h-[250px] md:h-[600px] flex flex-col justify-center items-center' 
+            style={{ objectFit: 'cover' }}
           />
         )}
       </div>

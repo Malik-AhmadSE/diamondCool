@@ -16,7 +16,7 @@ function Product() {
   return (
     <>
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
       <Quality />
       <Products />
       <QualityQoutes />

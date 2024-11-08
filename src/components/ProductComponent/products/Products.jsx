@@ -84,7 +84,7 @@ function Products() {
   }, []);
 
   return (
-    <div className='w-full flex items-center justify-center'>
+    <div className='w-full px-8 flex items-center justify-center'>
       <div ref={containerRef} className='w-[95%] max-w-[1440px] flex flex-col md:gap-5 pt-10'>
         <div>
           <h6 className='font-semibold mb-2'>Categories</h6>

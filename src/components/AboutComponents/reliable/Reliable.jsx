@@ -77,9 +77,9 @@ function Reliable() {
     });
 
     return (
-        <div ref={containerRef} className='w-full md:mt-[400px] mt-20 z-1 flex justify-center items-center'>
+        <div ref={containerRef} className='w-full px-8 md:mt-[400px] mt-20 z-1 flex justify-center items-center'>
            <div className='flex flex-col md:flex-row gap-6 md:gap-3 px-4 md:px-0 w-full md:w-[95%] max-w-[1440px]'>
-           <div className='w-full md:w-[50%] space-y-6 md:space-y-0'>
+           <div className='w-full md:w-[50%] space-y-6'>
                 <div ref={titleRef} className='space-y-3'>
                     <h6 className='font-semibold text-sm md:mb-2 text-blue-600 uppercase tracking-wider'>Reliable</h6>
                     <h1 className='text-[32px] leading-[1.2] md:text-[45px] font-bold'>Quality Spare Parts for Long-Lasting Performance</h1>

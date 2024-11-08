@@ -59,16 +59,16 @@ function Serviceab() {
     });
 
     return (
-        <div ref={containerRef} className='flex w-full justify-center items-center flex-wrap sm:pb-0'>
-            <div className='w-[90%]'>
+        <div ref={containerRef} className='flex w-full px-8 justify-center items-center flex-wrap sm:pb-0'>
+            <div className='w-full'>
                 <div className='flex flex-col md:flex-row gap-10 md:gap-16'>
-                    <div ref={titleRef} className='w-full md:w-[45%]'>
+                    <div ref={titleRef} className='w-full md:w-[48%]'>
                         <h1 className='font-bold text-3xl md:text-[42px] lg:text-[48px] leading-tight text-gray-900'>
                             Discover Our Premium Services for Installation & Maintenance
                         </h1>
                     </div>
                     <div ref={descriptionRef} className='w-full md:w-[55%] flex items-center'>
-                        <p className='text-base md:text-lg lg:text-xl tracking-wide text-gray-700 leading-relaxed'>
+                        <p className='text-base md:text-lg lg:text-xl text-justify tracking-wide text-gray-700 leading-relaxed'>
                             Beyond our comprehensive product range, we deliver exceptional installation and maintenance services. Our certified team ensures precise appliance installation and optimal performance through regular maintenance, maximizing both efficiency and longevity.
                         </p>
                     </div>

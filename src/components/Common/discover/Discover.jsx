@@ -55,11 +55,11 @@ function Discover() {
   }, []);
 
   return (
-    <div className='w-full mt-56 flex justify-center item-center mb-[150px]'>
+    <div className='w-full px-8 mt-56 flex justify-center item-center mb-[150px]'>
        <Card 
         ref={cardRef}
         hoverable 
-        className='w-[95%] md:w-[80%] h-auto !overflow-hidden !p-0' 
+        className='w-full  h-auto !overflow-hidden !p-0' 
       >
         <div className='flex flex-col md:flex-row justify-between'>
           <div ref={textRef} className='flex flex-col justify-center p-5 md:p-10'>

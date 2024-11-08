@@ -33,8 +33,8 @@ const Divs = () => {
   }, []);
 
   return (
-    <div className='w-full flex items-center justify-center'>
-      <div ref={containerRef} className='w-[95%] max-w-[1440px] flex flex-wrap md:flex-nowrap justify-center gap-10 items-center p-10'>
+    <div className='w-full px-8 flex items-center justify-center'>
+      <div ref={containerRef} className='w-full flex flex-wrap md:flex-nowrap justify-center gap-10 items-center p-10'>
         <Card
           hoverable
           styles={{
@@ -116,7 +116,7 @@ const Divs = () => {
           >
             <h6 className='font-semibold mb-1'>Convenience</h6>
             <h4 className='font-bold text-[25px] pt-1'>Online Shopping</h4>
-            <p className='pt-1 tracking-wider'>Browse and purchase appliances from the comfort of your home.</p>
+            <p className='pt-1 tracking-wider'>purchase appliances from the comfort of your home.</p>
             <div className='pt-2 -ml-1'>
               <Button type='text' icon={<RightOutlined />} iconPosition='end' className='font-semibold text-black'>Buy</Button>
             </div>

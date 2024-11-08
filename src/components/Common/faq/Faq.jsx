@@ -5,8 +5,8 @@ function Faq() {
     const [btn, setbtn] = React.useState("primary");
 
     return (
-        <div className='flex justify-center items-center mb-10 mt-10'>
-            <div className='w-[95%] flex flex-col'>
+        <div className='w-full px-8 flex justify-center items-center mb-10 mt-10'>
+            <div className='w-full flex flex-col'>
                 <div className='w-full flex flex-col gap-10'>
                     <h1 className='md:w-[550px] font-bold text-[30px] md:text-[45px]'>FAQ's</h1>
                     <p className='md:w-[620px] pt-5 tracking-wider'>Find answers to common questions about our products and services right here.</p>

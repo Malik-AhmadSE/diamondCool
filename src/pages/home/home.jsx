@@ -19,18 +19,18 @@ import Form from '../../components/homeComponent/contact/Form.jsx';
 function Home() {
 
   return (
-    <div className="!w-full !p-0 !m-0 overflow-hidden" >
+    <div className="!w-full !p-0 !m-0 " >
       <Navbar />
       <Hero /> 
       <Brands />
-      <div>
+      <div className='flex flex-col gap-10'>
         <AirCond />
         <Refrigrator />
         <Washing /> 
         <Kitchen />
         <Tool />
       </div>
-     <div className='pl-4 pr-4'>
+     <div >
      <Form />
      </div>
      {/* <Cards /> */}

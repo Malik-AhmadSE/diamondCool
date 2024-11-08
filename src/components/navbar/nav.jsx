@@ -4,7 +4,6 @@ import { MenuOutlined, SearchOutlined, MailFilled, PhoneFilled} from '@ant-desig
 import { useNavigate } from 'react-router';
 import Learn from '../Common/learn/Learn.jsx';
 
-
 const Nav = () => {
   const [value, setValue] = useState('horizontal');
   const [btn, setBtn] = useState("primary");
@@ -33,9 +32,9 @@ const Nav = () => {
 
   return (
     <>
-      <div className={`!w-full !h-36  fixed md:!w-full md:top-0 md:left-0 z-40 hidden md:flex justify-center `}>
-        <Flex gap="middle" vertical className="!w-[94.5%] overflow-hidden bg-Nav bg-cover">
-          <Flex vertical={value === 'vertical'} className="!w-[95%] flex items-center justify-between mt-3">
+      <div className={`!w-full !h-36  fixed md:!w-full md:top-0 md:left-0 z-40 hidden md:flex justify-center px-8`}>
+        <Flex gap="middle" vertical className="!w-full overflow-hidden bg-Nav bg-cover px-8">
+          <Flex vertical={value === 'vertical'} className="!w-full flex items-center justify-between mt-3">
             <div className="flex flex-col !w-1/2 items-center justify-center">
               {/* <Typography className='text-xl font-bold italic text-green-700'>
                 Diamond Cool Aircondition Spare Parts Trading LLC
@@ -110,12 +109,12 @@ const Nav = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <div className='!w-full fixed z-50 flex items-center justify-center top-0 left-0'>
-  <Flex className={`!w-[95%] bg-Nav md:hidden self-center z-40 p-4 justify-between items-center overflow-x-hidden`}>
-    <div className="flex flex-col w-[98%]">
+      <div className='!w-full fixed z-50 flex items-center justify-center top-0 left-0 px-8'>
+  <Flex className={`!w-full bg-Nav md:hidden self-center z-40 p-4 justify-between items-center overflow-x-hidden px-8`}>
+    <div className="flex flex-col w-full">
       <Image
         src="https://res.cloudinary.com/dvf9mmcww/image/upload/v1725982988/MainImages/kntrbdys2pgk0cxzazfq.png"
-        className="!w-[250px] -ml-5"
+        className="!w-[250px]"
         preview={false}
         onClick={() => { navigate('/'); }}
       />
@@ -138,10 +137,10 @@ const Nav = () => {
     placement="right"
     onClose={() => setDrawerVisible(false)}
     visible={drawerVisible}
-    className="md:hidden p-5"
+    className="md:hidden p-5 px-8"
   >
     <Flex className='flex-col'>
-      <div className="w-[100%] flex items-center bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg mb-5">
+      <div className="w-full flex items-center bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg mb-5">
         <Input
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}

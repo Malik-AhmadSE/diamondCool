@@ -8,7 +8,7 @@ import Logo from '../../assets/images/logofooter.jpg';
 
 function Footer() {
   return (
-    <div className='w-full flex flex-col mt-32 px-5 md:px-10 !overflow-x-hidden'>
+    <div className='w-full px-8 flex flex-col mt-32 px-5 md:px-10 !overflow-x-hidden'>
       <div className='w-full flex flex-col md:flex-row gap-10'>
         <div className='w-full md:w-[75%] flex flex-col  md:pl-10'>
           <Image src={Logo} className='!w-[150px] mx-auto md:mx-0' preview={false} onClick={() => { /* navigate('/') */ }} />

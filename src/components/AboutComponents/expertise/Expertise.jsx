@@ -56,18 +56,18 @@ function Expertise() {
     });
 
     return (
-        <div ref={containerRef} className='w-full md:mt-48 mt-20 z-1 flex justify-center items-center'>
-            <div className='w-[95%] max-w-[1440px] flex flex-wrap md:flex-nowrap gap-8 md:gap-12 px-4 md:px-0'>
+        <div ref={containerRef} className='w-full px-8 md:mt-48 mt-20 z-1 flex justify-center items-center'>
+            <div className='w-full flex flex-wrap md:flex-nowrap gap-8 md:gap-12 px-4 md:px-0'>
                 <div className='w-full md:w-1/2 space-y-6'>
                     <h1 
                         ref={titleRef}
-                        className='font-bold text-[32px] md:text-[45px] leading-tight md:text-center md:text-left'
+                        className='font-bold text-[32px] md:text-[45px] leading-tight text-center md:text-left'
                     >
                         Expertise that Keeps Your Machines in Optimal Condition
                     </h1>
                     <p 
                         ref={contentRef}
-                        className='text-base md:text-lg tracking-wider text-justify text-gray-700 text-center md:text-left'
+                        className='text-base md:text-lg tracking-wider text-justify md:text-left text-gray-700 text-center md:text-left'
                     >
                         With years of experience in the appliance industry, Diamond Cool understands what it takes to keep your machines running smoothly. Our expertise ensures that you receive top-quality spare parts and expert advice for optimal performance.
                     </p>
