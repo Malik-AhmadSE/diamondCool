@@ -77,7 +77,7 @@ function Reliable() {
     });
 
     return (
-        <div ref={containerRef} className='w-full px-8 md:mt-[400px] mt-20 z-1 flex justify-center items-center'>
+        <div ref={containerRef} className='w-full md:px-8 px-4 md:mt-[400px] mt-16 z-1 flex justify-center items-center'>
            <div className='flex flex-col md:flex-row gap-6 md:gap-3 px-4 md:px-0 w-full md:w-[95%] max-w-[1440px]'>
            <div className='w-full md:w-[50%] space-y-6'>
                 <div ref={titleRef} className='space-y-3'>
