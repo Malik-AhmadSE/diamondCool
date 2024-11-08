@@ -123,7 +123,7 @@ const Nav = () => {
           <MailFilled className="text-blue-500 text-[12px] italic" />
           <span className='text-[12px] italic text-blue-500'>diamondcooluae@gmail.com</span>
         </div>
-        <div className='flex gap-1 mr-2'>
+        <div className='flex gap-1 mr-4'>
           <PhoneFilled className="text-blue-500 mr-1 text-[12px] italic" style={{ transform: 'rotate(110deg)' }} />
           <span className='text-[12px] italic text-blue-500'>+971558531096</span>
         </div>
