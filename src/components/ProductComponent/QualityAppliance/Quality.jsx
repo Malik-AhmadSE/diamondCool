@@ -64,7 +64,7 @@ function Quality() {
                 </div>
                 <div className='w-full md:w-1/2 md:pl-10 flex flex-col justify-center'>
                     <p ref={contentRef} className='pt-5 text-justify md:text-left tracking-wider text-base md:text-lg'>
-                        Welcome to our store, where you'll find a wide selection of refrigerators, air conditioners, washing machines, and spare parts. We offer top-quality products at affordable prices, ensuring your home is equipped with the best appliances.
+                        Welcome to our store, where you'll find a wide selection of Air conditions Spare Parts, Refrigerators Spare Parts, Washing Machines Spare Parts and Tools. We offer top-quality products at affordable prices, ensuring your home is equipped with the best appliances.
                     </p>
                     <div ref={buttonRef} className='mt-10 pb-10'>
                         <Buttons />

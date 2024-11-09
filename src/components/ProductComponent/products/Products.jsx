@@ -97,7 +97,7 @@ function Products() {
         {/* Air Conditioners Section */}
         <div>
           <div className='flex justify-between items-center md:pr-10 pt-5'>
-            <h1 className='md:w-[550px] font-bold text-[30px] md:text-[45px]'>Air Condition</h1>
+            <h1 className='md:w-[550px] font-bold text-[30px] md:text-[45px]'>Air Condition Spare Parts</h1>
             <Button type='link' iconPosition='end' icon={<RightOutlined />} className='font-semibold text-black -ml-4' onClick={showAirModal}>View More</Button>
             <AirComponent open={openAir} handleCancel={handleAirCancel} />
           </div>
@@ -117,7 +117,7 @@ function Products() {
 
         {/* Refrigerators Section */}
         <div className='flex justify-between items-center pt-10 md:pr-10'>
-          <h1 className='md:w-[550px] font-bold text-[30px] md:text-[45px]'>Refrigerators</h1>
+          <h1 className='md:w-[550px] font-bold text-[30px] md:text-[45px]'>Refrigerators Spare Parts</h1>
           <Button type='link' iconPosition='end' icon={<RightOutlined />} className='font-semibold text-black -ml-4' onClick={showRefModal}>View More</Button>
           <Ref open={openRef} handleCancel={handleRefCancel} />
         </div>
@@ -136,7 +136,7 @@ function Products() {
 
         {/* Washing Machines Section */}
         <div className='flex justify-between items-center pt-10 md:pr-10'>
-          <h1 className='md:w-[550px] font-bold text-[25px] md:text-[45px]'>Washing Machines</h1>
+          <h1 className='md:w-[550px] font-bold text-[25px] md:text-[45px]'>Washing Machines Spare Parts</h1>
           <Button type='link' iconPosition='end' icon={<RightOutlined />} className='font-semibold text-black -ml-4' onClick={showWasModal}>View More</Button>
           <Was open={openWas} handleCancel={handleWasCancel} />
         </div>
@@ -155,7 +155,7 @@ function Products() {
 
         {/* Kitchen Section */}
         <div className='flex justify-between items-center pt-10 md:pr-10'>
-          <h1 className='md:w-[550px] font-bold text-[25px] md:text-[45px]'>Kitchen</h1>
+          <h1 className='md:w-[550px] font-bold text-[25px] md:text-[45px]'>Kitchen Spare Parts</h1>
           <Button type='link' iconPosition='end' icon={<RightOutlined />} className='font-semibold text-black -ml-4' onClick={showKiModal}>View More</Button>
           <Kichen open={openki} handleCancel={handleKiCancel} />
         </div>
