@@ -67,7 +67,7 @@ function Discover() {
               Discover Our Amazing Product Range
             </h1>
             <p className='pt-5 tracking-wider pb-10 text-[14px] md:text-[16px]'>
-              Explore our wide selection of high-quality refrigerators, air conditioners, washing machines, and more.
+              Explore our wide selection of high-quality Air Conditioners, Refrigerators, Washing Machines and more.
             </p>
             <Buttons />
           </div>

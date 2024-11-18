@@ -59,7 +59,7 @@ function QualityQoutes() {
           Find Your Perfect Appliance
         </h1>
         <p ref={contentRef} className='w-full max-w-[920px] pt-5 tracking-wider text-sm md:text-base'>
-          Discover a wide range of refrigerators, air conditioners, washing machines, and spare parts.
+          Discover a wide range of Air conditions Spare Parts, Refrigerators Spare Parts, Washing Machines Spare Parts and Tools.
         </p>
       </div>
     </div>

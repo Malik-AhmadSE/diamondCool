@@ -39,7 +39,7 @@ const AboutUsModal = ({ open, handleCancel }) => {
 
           <h3 className='font-semibold text-[25px] pb-5'>Why Choose Diamond Cool?</h3>
           <ul className='pb-8'>
-            <li><strong>Wide Selection:</strong> We offer a broad range of spare parts for refrigerators, air conditioners, 
+            <li><strong>Wide Selection:</strong> We offer a broad range of spare parts for Air Conditioners, Refrigerators 
             and washing machines, compatible with all leading brands.</li>
             <li><strong>Expert Knowledge:</strong> Our team has years of experience in the appliance industry and can provide 
             expert advice on the best parts for your specific needs.</li>

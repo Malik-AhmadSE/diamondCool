@@ -15,7 +15,7 @@ function Faq() {
                     <div className='w-full md:w-[45%] flex gap-5 flex-wrap'>
                         <div>
                             <h5 className='md:w-[550px] font-bold text-[20px]'>What products do you offer?</h5>
-                            <p className=' pt-5 tracking-wider text-justify'>We offer a wide range of home appliances including refrigerators, air conditioners, and washing machines. Additionally, we provide spare parts for all our products. Our goal is to ensure you find exactly what you need for your home.</p>
+                            <p className=' pt-5 tracking-wider text-justify'>We offer a wide range of home appliances including Air Conditioners, Refrigerators and Washing Machines. Additionally, we provide spare parts for all our products. Our goal is to ensure you find exactly what you need for your home.</p>
                         </div>
                         <div>
                             <h5 className='md:w-[550px] font-bold text-[20px]'>What is your warranty?</h5>
